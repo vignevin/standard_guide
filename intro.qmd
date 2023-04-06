@@ -1,0 +1,18 @@
+# Introduction
+
+Ce standard a été proposé dans le cadre du projet VITIS DATA CROP (CASDAR RT 2020). Ce projet a pour objectif de proposer un ensemble cohérent d'outils et des méthodes pour améliorer l'interopérabilité, le partage et l'ouverture des données. Un atelier autour du vocabulaire expérimental s'est tenu le 19 janvier 2023 lors du [séminaire](https://vignevin.quarto.pub/seminaire-data-2023/) organisé dans le cadre de ce projet. Cet atelier a permis de collecter un ensemble de termes dans différents contextes.
+
+Ces éléments ont été complétés par une revue de l'existant, en analysant les métadonnées proposées dans les systèmes d'informations existants :
+
+-   [Silex Porte-greffe](http://vinnotec.supagro.inra.fr/public/Pg/index/index) : système d'information qui a pour objectif de rassembler les données expérimentales existantes (en pépinière et au vignoble) sur les porte-greffes utilisés en viticulture (seule la partie vignoble a été analysée).
+-   [Oscar](https://observatoire-cepages-resistants.fr/) : dispositif participatif, constitué d'un réseau de parcelles en production plantées par les viticulteurs et suivis par des techniciens. Une base de données regroupant les informations est stockée sur la plateforme Epicure de l'IFV.
+-   [Ocesar](https://centredurose.fr/le-programme-du-centre-du-rose/projet-cepages-ocesar/) : système d'information centralisant les informations issues du réseau d'observations régional des parcelles de variétés innovantes, en région SUD.
+-   Sinfonia : système d'information IFV pour la gestion des données expérimentales vigne et vin
+-   [Adonis](https://www6.inrae.fr/adonis) : outil de collecte de données expérimentale INRAE [@EquipeprojetAdonis.2013]
+-   (VitisExplorer)
+
+Cette revue a été complétée par des approches similaires conduites lors de projets de mise en réseau : Recap&Dep (Projet PNDV) ou le format MIAPPE, plus générique [@Krajewski.2015].
+
+::: callout-warning
+L'objectif n'est pas d'être exhaustif sur les métadonnées existantes dans ces différents projets, mais de proposer une sélection de métadonnées en recherchant un consensus de la communauté scientifique et technique vigne.
+:::

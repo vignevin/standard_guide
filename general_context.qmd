@@ -1,0 +1,46 @@
+# Le contexte général
+
+```{r load_utils}
+#| echo: false
+#| warning: false
+
+source("utils.R")
+
+```
+
+## Le projet
+
+Un projet (sous entendu "de recherche") est le cadre général dans lequel s'inscrivent des activités de recherche, dont en particulier une ou plusieurs expérimentations. Connaître le projet permet d'avoir une vision d'ensemble des activités conduites et de rechercher des documents ou compléments d'informations sur le contexte de l'étude. La connaissance du support financier peut aussi être importante pour définir le statut des données et leur vocation ou non à être ouvertes (qui peut être précisé dans le plan de gestion de données du projet). Les métadonnées descriptives du projet sont proposées dans @tbl-metadata_prj.
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-metadata_prj
+#| tbl-cap: Métadonnées descriptives du projet
+#| column: page
+
+knit_table(df=schema,context="project")
+
+
+# metadata_prj <- schema %>%
+#   filter(subcontext=="project") %>%
+#   select(label_fr,description_fr,example_fr,type, enum)
+# kbl(metadata_prj) %>%
+#   kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+```
+
+## L'expérimentation
+
+Généralement conduite au sein d'un projet, une expérimentation est une activité planifiée selon un protocole pour répondre à une question donnée. Tout comme le projet, elle peut être décrite par quelques métadonnées décrites dans le @tbl-metadata_expe ci-dessous.
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-metadata_expe
+#| tbl-cap: Métadonnées descriptives de l'expérimentation
+#| column: page
+
+knit_table(df=schema,context="experimentation")
+
+```

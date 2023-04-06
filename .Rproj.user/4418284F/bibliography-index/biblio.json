@@ -1,0 +1,296 @@
+{
+    "sources": [
+        {
+            "ISBN": "9782870160695",
+            "abstract": "Principes d’expérimentation : planification des expériences et analyse de leurs résultats présente les notions de base de l’expérimentation, considérée comme l’utilisation raisonnée des plans d’expériences. Cet ouvrage s’étend de la conception de tels plans à l’analyse et l’interprétation des résultats obtenus. Ces notions sont présentées d’une manière très générale et sont illustrées de nombreux exemples. L’ensemble comprend aussi des tables numériques, un index bibliographique de plus de 400 références, un index des traductions anglaises et un index des matières. Ce livre s’adresse ainsi aux enseignants, aux étudiants et aux chercheurs de toutes les disciplines qui font appel à la méthode expérimentale, dans le cadre des universités, des grandes écoles et des centres de recherche publics et privés. Il constitue un complément aux ouvrages Théorie et méthodes statistiques : applications agronomiques (2 vol.), publié initialement en 1969 et 1970, et Statistique théorique et appliquée (2 vol.), publié en 1998.",
+            "author": [
+                {
+                    "family": "Dagnelie",
+                    "given": "Pierre"
+                }
+            ],
+            "id": "Dagnelie.2003",
+            "issued": {
+                "date-parts": [
+                    [
+                        2003
+                    ]
+                ]
+            },
+            "publisher": "Les Presses agronomiques de Gembloux",
+            "publisher-place": "Gembloux (Belgique)",
+            "title": "Principes d’expérimentation: Planification des expériences et analyse de leurs résultats",
+            "title-short": "Principes d’expérimentation",
+            "type": "book"
+        },
+        {
+            "URL": "https://www6.inrae.fr/adonis/content/download/3567/33993/version/1/file/INRA_ADONIS_Manuel_Utilisateur_Bureau_V3-4.pdf",
+            "author": [
+                {
+                    "literal": "Equipe projet Adonis"
+                }
+            ],
+            "id": "EquipeprojetAdonis.2013",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "publisher": "INRAE",
+            "title": "Adonis bureau - manuel utilisateur",
+            "type": "book",
+            "volume": "Adonis version 3.4"
+        },
+        {
+            "URL": "https://opensilex.github.io/phis-docs-community/experimental-organization/",
+            "id": "INRAE.2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "title": "PHIS user documentattion",
+            "type": ""
+        },
+        {
+            "DOI": "10.15454/J8GANU",
+            "URL": "https://consultation.vocabulaires-ouverts.inrae.fr/thesaurus-inrae/fr/",
+            "abstract": "Thésaurus ouvert et partagé couvrant les domaines de recherche d’INRAE. Il sert de référentiel au sein de l’institut pour indexer et annoter des documents, pages web, descriptions d’activités, jeux de données, à des fins de recherche ou d’analyse de l’information. En savoir plus : https://vocabulaires-ouverts.inrae.fr/a-propos-du-thesaurus-inrae",
+            "author": [
+                {
+                    "family": "INRAE"
+                }
+            ],
+            "id": "INRAE.2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "publisher": "Portail Data INRAE",
+            "title": "Thésaurus INRAE",
+            "type": ""
+        },
+        {
+            "URL": "http://open-library.cirad.fr/files/2/521__946767658.pdf",
+            "author": [
+                {
+                    "family": "Letourmy",
+                    "given": "Philippe"
+                },
+                {
+                    "family": "Gozé",
+                    "given": "Eric"
+                }
+            ],
+            "id": "Letourmy.1999",
+            "issued": {
+                "date-parts": [
+                    [
+                        1999
+                    ]
+                ]
+            },
+            "publisher": "CIRAD",
+            "title": "Expérimentation agronomique planifiée",
+            "type": "book"
+        },
+        {
+            "ISBN": "9789251055212",
+            "URL": "https://library.wur.nl/webquery/wurpubs/355777",
+            "abstract": "Soils are affected by human activities, such as industrial, municipal and agriculture, that often result in soil degradation and loss. In order to prevent soil degradation and to rehabilitate the potentials of degraded soils, reliable soil data are the most important prerequisites for the design of appropriate land-use systems and soil management practices as well as for a better understanding of the environment. The availability of reliable information on soil morphology and other characteristics obtained through examination and description of the soil in the field is essential, and the use of a common language is of prime importance. These guidelines, based on the latest internationally accepted systems and classifications, provide a complete procedure for soil description and for collecting field data. To help beginners, some explanatory notes are included as well as keys based on simple test and observations.",
+            "author": [
+                {
+                    "literal": "R. Jahn"
+                },
+                {
+                    "literal": "H.P. Blume"
+                },
+                {
+                    "literal": "V.B. Asio"
+                },
+                {
+                    "literal": "O. Spaargaren"
+                },
+                {
+                    "literal": "P. Schad"
+                },
+                {
+                    "family": "Jahn",
+                    "given": "R."
+                },
+                {
+                    "family": "Blume",
+                    "given": "H. P."
+                },
+                {
+                    "family": "Asio",
+                    "given": "V. B."
+                },
+                {
+                    "family": "Spaargaren",
+                    "given": "O."
+                },
+                {
+                    "family": "Schad",
+                    "given": "P."
+                }
+            ],
+            "edition": "4th ed.",
+            "id": "R.Jahn.2006",
+            "issued": {
+                "date-parts": [
+                    [
+                        2006
+                    ]
+                ]
+            },
+            "publisher": "Food and Agriculture Organization of the United Nations",
+            "publisher-place": "Rome",
+            "title": "Guidelines for soil description",
+            "type": "book"
+        },
+        {
+            "URL": "https://pp1.eppo.int/standards/PP1-152-4-fr.pdf",
+            "author": [
+                {
+                    "literal": "European and Mediterranean Plant Protection Organization"
+                }
+            ],
+            "id": "EPPO.2006",
+            "issued": {
+                "date-parts": [
+                    [
+                        2006
+                    ]
+                ]
+            },
+            "title": "Evaluation biologique des produits phytosanitaires. Mise en place et analyse des essais d’évaluation biologique",
+            "type": ""
+        },
+        {
+            "URL": "https://hal.inrae.fr/hal-02947459",
+            "author": [
+                {
+                    "family": "Duchêne",
+                    "given": "Eric"
+                },
+                {
+                    "family": "Pommier",
+                    "given": "Cyril"
+                }
+            ],
+            "container-title": "The First Annual Meeting of COST Action CA17111 INTEGRAPE 2019",
+            "id": "duchene:hal-02947459",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        3
+                    ]
+                ]
+            },
+            "keyword": "Ontology ; Plant marerial ; Grapevine",
+            "publisher-place": "Chania, Greece, 26-28 March 2019, Greece",
+            "title": "The Vitis Ontology: sustainable and FAIR (Findable, Accessible, Interoperable, Reusable) for consistent and complete data description through biologist friendly ontologies",
+            "type": "paper-conference"
+        },
+        {
+            "DOI": "10.1093/jxb/erv271",
+            "ISSN": "0022-0957",
+            "abstract": "Recent methodological developments in plant phenotyping, as well as the growing importance of its applications in plant science and breeding, are resulting in a fast accumulation of multidimensional data. There is great potential for expediting both discovery and application if these data are made publicly available for analysis. However, collection and storage of phenotypic observations is not yet sufficiently governed by standards that would ensure interoperability among data providers and precisely link specific phenotypes and associated genomic sequence information. This lack of standards is mainly a result of a large variability of phenotyping protocols, the multitude of phenotypic traits that are measured, and the dependence of these traits on the environment. This paper discusses the current situation of standardization in the area of phenomics, points out the problems and shortages, and presents the areas that would benefit from improvement in this field. In addition, the foundations of the work that could revise the situation are proposed, and practical solutions developed by the authors are introduced.",
+            "author": [
+                {
+                    "family": "Krajewski",
+                    "given": "Paweł"
+                },
+                {
+                    "family": "Chen",
+                    "given": "Dijun"
+                },
+                {
+                    "family": "Ćwiek",
+                    "given": "Hanna"
+                },
+                {
+                    "family": "Dijk",
+                    "given": "Aalt D. J.",
+                    "non-dropping-particle": "van"
+                },
+                {
+                    "family": "Fiorani",
+                    "given": "Fabio"
+                },
+                {
+                    "family": "Kersey",
+                    "given": "Paul"
+                },
+                {
+                    "family": "Klukas",
+                    "given": "Christian"
+                },
+                {
+                    "family": "Lange",
+                    "given": "Matthias"
+                },
+                {
+                    "family": "Markiewicz",
+                    "given": "Augustyn"
+                },
+                {
+                    "family": "Nap",
+                    "given": "Jan Peter"
+                },
+                {
+                    "family": "Oeveren",
+                    "given": "Jan",
+                    "non-dropping-particle": "van"
+                },
+                {
+                    "family": "Pommier",
+                    "given": "Cyril"
+                },
+                {
+                    "family": "Scholz",
+                    "given": "Uwe"
+                },
+                {
+                    "family": "Schriek",
+                    "given": "Marco",
+                    "non-dropping-particle": "van"
+                },
+                {
+                    "family": "Usadel",
+                    "given": "Björn"
+                },
+                {
+                    "family": "Weise",
+                    "given": "Stephan"
+                }
+            ],
+            "container-title": "Journal of Experimental Botany",
+            "id": "Krajewski.2015",
+            "issue": "18",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "page": "5417-5427",
+            "title": "Towards recommendations for metadata and data handling in plant phenotyping",
+            "type": "article-journal",
+            "volume": "66"
+        }
+    ],
+    "project_biblios": [
+        "references.bib"
+    ]
+}

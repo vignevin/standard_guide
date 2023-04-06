@@ -1,0 +1,94 @@
+
+```{r load_utils}
+#| echo: false
+#| warning: false
+
+source("utils.R")
+
+```
+
+# Le contexte viticole
+
+## L'exploitation agricole
+
+Les métadonnées d'une exploitation agricole sont proposées dans le @tbl-metadata_estate ci-dessous.
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-metadata_estate
+#| tbl-cap: Métadonnées descriptives de l'exploitation
+#| column: page
+
+knit_table(df=schema,context="estate")
+```
+
+::: callout-important
+## Données à caractère personnel
+
+Attention, certaines données (noms, géolocalisation précise des parcelles) peuvent être des données à caractère personnel (DCP) et dans ce cas doivent respecter le Règlement Général sur la Protection des Données (RGPD). Un des principes du RGPD est de recueillir le consentement explicite et éclairé des personnes pour tout traitement des données à caractère personnel. En l'absence de ce consentement, il faudra **supprimer** ou **anonymiser** les DCP.
+:::
+
+## La parcelle expérimentale
+
+Les métadonnées d'une parcelle expérimentale sont proposées dans le @tbl-metadata_plot ci-dessous.
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-metadata_plot
+#| tbl-cap: Métadonnées descriptives de la parcelle expérimentale
+#| column: page
+knit_table(df=schema,context="plot")
+```
+
+## Le sol
+
+Avoir quelques éléments sur le sol est généralement pertinent pour mieux appréhender le contexte de production. Les métadonnées liées au sol sont proposées dans le @tbl-metadata_soil ci-dessous. Les analyses de sol peuvent être fournies en document complémentaire.
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-metadata_soil
+#| tbl-cap: Métadonnées descriptives du sol de la parcelle
+#| column: page
+knit_table(df=schema,context="soil")
+```
+
+## L'itinéraire technique
+
+Tout comme le sol, la connaissance de l'itinéraire technique est utile pour mieux comprendre les résultats. Les métadonnées liées à l'itinéraire technique sont proposées dans le @tbl-metadata_itk ci-dessous. L'itinéraire technique pouvant toutefois évoluer au cours d'un essai suivi sur plusieurs années, il est possible de lui donner un millésime de début et un de fin.
+
+Les données complètes de traçabilité de l'itinéraire technique (dates des interventions, matériel, produits utilisées...) peuvent être fournies en fichier(s) complémentaire(s), de préférence en utilisant les standards existants comme celui proposé par AgroEDI (format [DAPLOS](https://agroedieurope.fr/workgroup/tracabilite-des-productions-vegetales/fiche-parcellaire-grandes-cultures-message-edifact-daplos/) ou [e-DAPLOS](https://agroedieurope.fr/workgroup/tracabilite-des-productions-vegetales/fiche-parcellaire-edaplos/)). Cela peut aussi être plus simplement une exportation pdf issu d'un logiciel de traçabilité comme MesParcelles.
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-metadata_itk
+#| tbl-cap: Métadonnées descriptives de l'itinéraire technique sur la parcelle
+#| column: page
+knit_table(df=schema,context="itk")
+```
+
+## Les conditions météorologiques
+
+Les conditions météorologiques lors des essais au vignoble peuvent être caractérisées de manière plus ou moins précise :
+
+-   à partir d'indicateurs synthétiques du millésime, comme une somme de pluie, une température moyenne ou un bilan hydrique simplifié. Ces indicateurs doivent être définis ultérieurement.
+
+-   avec un jeu de données météo au pas quotidien, voire horaire suivant les essais.
+
+Les évènements climatiques majeurs seront déclarées comme évènements.
+
+## Les évènements
+
+Les évènements sont des évènements ponctuels se produisant au cours d'une expérience et pouvant avoir un impact sur les données enregistrées. Ces évènements peuvent être planifiés (par exemple une date de semis) ou inattendus (par exemple, des dommages à une expérimentation au champ causés par des animaux sauvages, un accident climatique). Leur déclaration se fait sur le modèle présenté ci-dessous (@tbl-metadata_event).
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-metadata_event
+#| tbl-cap: Description d'un évènement survenu lors de l'expérimentation
+#| column: page
+knit_table(df=schema,context="event")
+```

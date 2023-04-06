@@ -1,0 +1,66 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Guide pour la description d'une expérimentation en vigne"
+  date: 2023-02-15
+  author: 
+  - name: Xavier Delpuech
+    corresponding: true
+    orcid: 0000-0001-7278-3209
+    email: xavier.delpuech@vignevin.com
+    affiliations:
+      - IFV
+  - name: Vincent Dumas
+    affiliations:
+      - INRAE
+  - name: Jean-Yves Cahurel
+    affiliations:
+      - IFV
+  - name: Laure Gontier
+    affiliations:
+      - IFV
+  - name: Marion Claverie
+    affiliations:
+      - IFV
+  - name: Arnaud Charleroy
+    affiliations:
+      - INRAE
+  - name: Viviane Bécart
+    affiliations:
+      - SGVRCDR
+  - name: Romain Lacroix
+    affiliations:
+      - SGVRCDR
+  - name: Eric Duchêne
+    affiliations:
+      - INRAE
+  - name: Nathalie Ollat
+    affiliations:
+      - INRAE
+  - name: Joseph Tran
+    affiliations:
+      - INRAE
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - general_context.qmd
+    - expe_design.qmd
+    - vineyard_context.qmd
+    - summary.qmd
+    - references.qmd
+  appendices:
+    - glossary.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+lang: fr
+

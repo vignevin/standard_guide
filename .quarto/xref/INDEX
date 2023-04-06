@@ -1,0 +1,26 @@
+{
+  "index.qmd": {
+    "index.html": "cb0c0e17"
+  },
+  "intro.qmd": {
+    "intro.html": "a0706cf5"
+  },
+  "general_context.qmd": {
+    "general_context.html": "084a0030"
+  },
+  "expe_design.qmd": {
+    "expe_design.html": "4743e98a"
+  },
+  "vineyard_context.qmd": {
+    "vineyard_context.html": "5ad81dd2"
+  },
+  "summary.qmd": {
+    "summary.html": "dfa1f4e7"
+  },
+  "references.qmd": {
+    "references.html": "fec7b261"
+  },
+  "glossary.qmd": {
+    "glossary.html": "e14e8f13"
+  }
+}

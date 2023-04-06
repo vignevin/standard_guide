@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.306">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Guide pour la description d’une expérimentation en vigne - 3&nbsp; Le dispositif expérimental</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./vineyard_context.html" rel="next">
+<link href="./general_context.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer"
+  }
+}</script>
+
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./expe_design.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le dispositif expérimental</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Recherche" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Guide pour la description d’une expérimentation en vigne</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Recherche"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Préambule</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./general_context.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Le contexte général</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./expe_design.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le dispositif expérimental</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vineyard_context.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le contexte viticole</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Annexes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossaire</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table des matières</h2>
+   
+  <ul>
+  <li><a href="#le-vocabulaire" id="toc-le-vocabulaire" class="nav-link active" data-scroll-target="#le-vocabulaire"><span class="header-section-number">3.1</span> Le vocabulaire</a></li>
+  <li><a href="#le-plan-dexpérience" id="toc-le-plan-dexpérience" class="nav-link" data-scroll-target="#le-plan-dexpérience"><span class="header-section-number">3.2</span> Le plan d’expérience</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le dispositif expérimental</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="le-vocabulaire" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="le-vocabulaire"><span class="header-section-number">3.1</span> Le vocabulaire</h2>
+<p>Au vignoble , l’expérimentation est généralement mis en place sur une parcelle ou unité culturale. Le dispositif expérimental est mis en place sur tout ou partie de la parcelle (<a href="#fig-dispositifexpe">Figure&nbsp;<span>3.1</span></a>), avec laquelle il partage un certain nombre de caractéristiques en dehors des traitements appliqués dans le cadre de l’expérimentation.</p>
+<p>On appelle “traitement expérimental” toute combinaison de niveaux ou de modalités des facteurs étudiés. Si un seul facteur est étudié, il y a identité entre un traitement et un niveau.</p>
+<p>La “parcelle unitaire” (ou élémentaire) est la plus petite unité expérimentale qui reçoit un traitement. Dans les essais au champ, elle est constituée d’une certaine étendue de terrain et d’un certain nombre de plants. L’ensemble des parcelles unitaires définit le “dispositif expérimental”.</p>
+<p>L’unité d’observation peut-être restreinte à une sous-partie de la parcelle unitaire (<a href="#fig-disp2">Figure&nbsp;<span>3.1 (b)</span></a>). En vigne, le terme de “placette” est souvent utilisé pour l’unité d’observation. Enfin, chaque placette est constituée d’un ensemble de plants de vigne, aussi appelés pieds, souches ou ceps.</p>
+<div id="fig-dispositifexpe" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-disp1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="DispositifExpe1.png" class="img-fluid figure-img" data-ref-parent="fig-dispositifexpe"></p>
+<p></p><figcaption class="figure-caption">(a) Vue d’ensemble</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-disp2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="DispositifExpe2.png" class="img-fluid figure-img" data-ref-parent="fig-dispositifexpe"></p>
+<p></p><figcaption class="figure-caption">(b) Zoom sur une placette</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.1: Exemple de dispositif expérimental au vignoble</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="le-plan-dexpérience" class="level2 page-columns page-full" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="le-plan-dexpérience"><span class="header-section-number">3.2</span> Le plan d’expérience</h2>
+<p>Les facteurs étudiés et leurs niveaux (ou modalités) sont décrits indépendamment du plan d’expérience (<a href="#tbl-metadata_factor">Table&nbsp;<span>3.1</span></a>). Une attention particulière doit être accordée à la description des facteurs.</p>
+<p>Parmi les traitements, attention au terme générique “témoin” , dont la nature peut varier suivant les objectifs de l’expérience. Suivant les cas, il peut s’agir d’un témoin avec les pratiques du viticulteur, un témoin sans apport, et dans les essais de protection phytosanitaire on parle de témoin de vraisemblance ou de témoin non traité (ou TNT). Il est donc nécessaire de décrire précisément le traitement “Témoin” pour éviter toute mauvaise interprétation des résultats.</p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-page">
+<div id="tbl-metadata_factor" class="anchored">
+<table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
+<caption>Table&nbsp;3.1: Description des facteurs étudiés</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Label</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Exemple</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Liste</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Description du facteur étudié</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Description du facteur (texte libre)</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Apport de matière organique sous forme d'amendement, réalisé en 2009,2012 et 2019</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Catégorie de facteur</td>
+<td style="text-align: left;">Type du facteur étudié</td>
+<td style="text-align: left;">Intrant</td>
+<td style="text-align: left;">matériel végétal<br>
+intrant<br>
+traitement phytosanitaire<br>
+entretien du sol<br>
+mode de conduite<br>
+système</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Niveau de facteur</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Nom ou code du niveau (valeur) du facteur</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">DV</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Description du niveau de facteur</td>
+<td style="text-align: left;">Description du niveau de facteur</td>
+<td style="text-align: left;">Apport de compost de déchets verts à 30T/ha en 2009,2012 et 2017</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</div>
+</div>
+<p>Le dispositif en lui-même peut être décrit par quelques métadonnées (<a href="#tbl-metadata_design">Table&nbsp;<span>3.2</span></a>).</p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-page">
+<div id="tbl-metadata_design" class="anchored">
+<table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
+<caption>Table&nbsp;3.2: Description du plan d’expérience</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Label</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Exemple</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Liste</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Description du plan d'expérience</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Brève description du plan d'expérience. Dans certains cas, il n’y a pas de plan d’expérience, et s’il s’agit d’une compilation de différentes études, on peut préciser «&nbsp;données aggrégées ou réduites&nbsp;»</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Dispositif en carré latin à 3 répétitions. 10 ceps sont suivis sur chaque unité expérimentale de 3 inter-rangs de large</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Type de plan d'expérience</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Type de plan d'expérience selon la crop ontology CO_715</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Carré latin</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Randomisé<br>
+Carré latin<br>
+Bloc randomisé<br>
+Blocs incomplets</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Traitement</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Code ou acronyme du traitement appliqué</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">MO</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Combinaison de niveaux de facteurs</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">Liste des niveaux de facteurs du traitement</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;">MO [ici un seul facteur]</td>
+<td style="text-align: left; font-weight: bold; background-color: #b3ffcc !important;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Nombre de répétition</td>
+<td style="text-align: left;">Nombre de répétitions du traitement</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Taille des unités expérimentales</td>
+<td style="text-align: left;">Taille en m² des unités expérimentales</td>
+<td style="text-align: left;">215</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Description des unités d'observations</td>
+<td style="text-align: left;">Brève description des unités d'observations</td>
+<td style="text-align: left;">placette de 10 ceps située au centre de chaque unité expérimentale</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Hétérogénéité</td>
+<td style="text-align: left;">Descriptif des facteurs d'hétérogénéité éventuels du dispositif expérimental (sol, matériel végétal, topographie…)</td>
+<td style="text-align: left;">gradient NS de fertilité du sol</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</div>
+</div>
+<p>Chaque parcelle unitaire (ou élémentaire) peut être définie par quelques champs de métadonnées proposés dans le <a href="#tbl-metadata_subplot">Table&nbsp;<span>3.3</span></a> ci-dessous. Les coordonnées relatives des parcelles unitaires peuvent être précisées mais dépendent du point de référence choisi par l’expérimentateur, souvent pour des considérations pratiques (accès de la parcelle). Les renseigner permet toutefois de générer le plan d’expérience et de tenir compte de leur position relative dans l’espace pour une représentation spatiale des données.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-metadata_subplot" class="anchored">
+<table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
+<caption>Table&nbsp;3.3: Métadonnées descriptives de la parcelle unitaire</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Label</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Code de la parcelle unitaire</td>
+<td style="text-align: left;">Code de la parcelle unitaire (ou élémentaire) permettant son identification unique au sein de l'expérimentation</td>
+<td style="text-align: left;">M11</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Nombre de ceps</td>
+<td style="text-align: left;">Nombre de ceps dans la parcelle unitaire</td>
+<td style="text-align: left;">30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Position x</td>
+<td style="text-align: left;">Position de la parcelle unitaire en coordonnées relatives x. Typiquement, cela peut être un numéro de rang.</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Position y</td>
+<td style="text-align: left;">Position de la parcelle unitaire en coordonnées relatives y. Typiquement, cela peut être le numéro de la 1er souche de la placette à partir du début du rang.</td>
+<td style="text-align: left;">25</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bloc</td>
+<td style="text-align: left;">Code du bloc surlequel se trouve la parcelle unitaire</td>
+<td style="text-align: left;">A</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Traitement</td>
+<td style="text-align: left;">Code du traitement appliqué sur la parcelle unitaire</td>
+<td style="text-align: left;">TEM</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</div>
+</div>
+<p>Le jeu de données lui-même devra être complété par un dictionnaire de données, explicitant les variables mesurées. Ces variables doivent être à chaque fois que c’est possible reliées à la Vitis Ontology<span class="citation" data-cites="duchene:hal-02947459">(<a href="references.html#ref-duchene:hal-02947459" role="doc-biblioref">Duchêne et Pommier 2019</a>)</span>.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-duchene:hal-02947459" class="csl-entry" role="listitem">
+Duchêne, Eric, et Cyril Pommier. 2019. <span>«&nbsp;<span>The Vitis Ontology: sustainable and FAIR (Findable, Accessible, Interoperable, Reusable) for consistent and complete data description through biologist friendly ontologies</span>&nbsp;»</span>. In <em><span>The First Annual Meeting of COST Action CA17111 INTEGRAPE 2019</span></em>. Chania, Greece, 26-28 March 2019, Greece. <a href="https://hal.inrae.fr/hal-02947459">https://hal.inrae.fr/hal-02947459</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./general_context.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Le contexte général</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./vineyard_context.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le contexte viticole</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

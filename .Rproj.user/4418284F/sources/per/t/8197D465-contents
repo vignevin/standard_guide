@@ -1,0 +1,24 @@
+# Préambule {.unnumbered}
+
+Ce guide a pour objectif de définir l'ensemble des éléments permettant une description suffisamment fine de l'expérimentation pour pouvoir faciliter la recherche, le croisement et la réutilisation des données acquises dans un contexte donné. Cet ensemble d'éléments est constitué de métadonnées[^index-1], et l'ambition est d'en faire un standard pour le domaine de l'expérimentation dans la filière viticole. Le champ recouvre :
+
+[^index-1]: Les métadonnées permettent de décrire plus précisément les données. Ce sont des données sur les données (Doranum.fr, 2023)
+
+-   le dispositif expérimental
+-   la description du contexte : les caractéristiques de la parcelle, du sol, de l'itinéraire technique.
+
+A noter qu'il existe des standards de description des ressources plus génériques, qui seront mobilisés par exemple lors du dépôt d'un jeu de données dans un entrepôt comme recherche.data.gouv (titre, auteur, mots-clés...) L'objectif ici est d'adresser à l'échelon inférieur et de définir des métadonnées pertinentes d'un point de vue technique[^index-2]. Pour chaque métadonnée, sera précisé :
+
+[^index-2]: Si les métadonnées permettent de standardiser une partie de l'information contextuelle des données, elles ne sont pas toujours suffisantes et le jeu de données gagnera aussi à être accompagné par des documents complémentaires : protocoles, analyses complémentaires, photos
+
+-   sa signification
+-   le type de contenu : texte, nombre, date
+-   son format, par exemple pour les dates AAAA-MM-DD
+-   les valeurs possibles le cas échéant (liste de choix)
+-   un niveau d'obligation
+
+*In fine*, l'utilisation de ce standard permettra de faciliter le partage et l'interopérabilité des données expérimentales dans la filière viticole.
+
+Ce guide reprend une description de ce standard dans un format mis en page. Ce standard sera aussi disponible sous différents formats plus adaptés à l'interopérabilité informatique (schéma csv, xml, rdf).
+
+Une définition des termes principaux est proposée dans le glossaire.
