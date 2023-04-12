@@ -1,4 +1,3 @@
-
 ```{r load_utils}
 #| echo: false
 #| warning: false
@@ -39,6 +38,7 @@ Les métadonnées d'une parcelle expérimentale sont proposées dans le @tbl-met
 #| label: tbl-metadata_plot
 #| tbl-cap: Métadonnées descriptives de la parcelle expérimentale
 #| column: page
+
 knit_table(df=schema,context="plot")
 ```
 

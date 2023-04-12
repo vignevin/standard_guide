@@ -18,6 +18,7 @@ knit_table <- function(df,context,nchar_max=300)
   df$example_fr <- substr(df$example_fr,start=1,stop=nchar_max) # to limit text size to 500 characters
   sel<-(!is.na(df$example_fr)&nchar(df$example_fr)==nchar_max)
   df$example_fr[sel]<-paste0(df$example_fr[sel]," [...]") # to mark truncated texts
+  df$description_fr[!is.na(df$source)]=paste0(df$description_fr[!is.na(df$source)]," [",df$source[!is.na(df$source)],"]") # to concatenate description and source
   df <- df %>%
     filter(subcontext==context) %>%
     select(label_fr,description_fr,example_fr,enum,priority,order) %>%
@@ -33,10 +34,11 @@ knit_table <- function(df,context,nchar_max=300)
   df %>% # mise en forme
     select(!"priority"&!"order") %>% # suppression colonne priority
     select(where(~ !(all(is.na(.)) | all(. == "")))) %>% # remove empty col
-    kable("html", escape = F) %>%
+    knitr::kable(format="html",escape="F") %>%
+    # "html", escape=F
     kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
-                  full_width = T) %>%
-    row_spec(which(df$priority == 1), background = "#b3ffcc",bold=T) ## fond vert sur les donnees obligatoires
+                  full_width = F) %>%
+    row_spec(which(df$priority == 1), background = "white",bold=T)
 }
 
 
