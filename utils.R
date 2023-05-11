@@ -12,7 +12,7 @@ library(knitr)
 
 
 #### functions
-knit_table <- function(df,context,nchar_max=300)
+knit_table <- function(df,context,nchar_max=300,caption="")
 {
   options(knitr.kable.NA = '')
   df$example_fr <- substr(df$example_fr,start=1,stop=nchar_max) # to limit text size to 500 characters
@@ -34,7 +34,8 @@ knit_table <- function(df,context,nchar_max=300)
   df %>% # mise en forme
     select(!"priority"&!"order") %>% # suppression colonne priority
     select(where(~ !(all(is.na(.)) | all(. == "")))) %>% # remove empty col
-    knitr::kable(format="html",escape="F") %>%
+    knitr::kable(format="html",escape="F",caption=caption) %>%
+#    unclass() %>% cat()
     # "html", escape=F
     kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
                   full_width = F) %>%

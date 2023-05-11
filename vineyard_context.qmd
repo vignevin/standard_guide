@@ -19,14 +19,8 @@ Les métadonnées d'une exploitation agricole sont proposées dans le @tbl-metad
 #| tbl-cap: Métadonnées descriptives de l'exploitation
 #| column: page
 
-knit_table(df=schema,context="estate")
+knit_table(df=schema,context="estate",caption="Métadonnées descriptives de l'exploitation")
 ```
-
-::: callout-important
-## Données à caractère personnel
-
-Attention, certaines données (noms, géolocalisation précise des parcelles) peuvent être des données à caractère personnel (DCP) et dans ce cas doivent respecter le Règlement Général sur la Protection des Données (RGPD). Un des principes du RGPD est de recueillir le consentement explicite et éclairé des personnes pour tout traitement des données à caractère personnel. En l'absence de ce consentement, il faudra **supprimer** ou **anonymiser** les DCP.
-:::
 
 ## La parcelle expérimentale
 
@@ -39,7 +33,7 @@ Les métadonnées d'une parcelle expérimentale sont proposées dans le @tbl-met
 #| tbl-cap: Métadonnées descriptives de la parcelle expérimentale
 #| column: page
 
-knit_table(df=schema,context="plot")
+knit_table(df=schema,context="plot",caption="Métadonnées descriptives de la parcelle expérimentale")
 ```
 
 ## Le sol

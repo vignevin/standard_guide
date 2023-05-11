@@ -48,7 +48,6 @@ book:
     - general_context.qmd
     - expe_design.qmd
     - vineyard_context.qmd
-    - summary.qmd
     - references.qmd
   appendices:
     - glossary.qmd

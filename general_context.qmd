@@ -44,3 +44,24 @@ Généralement conduite au sein d'un projet, une expérimentation est une activi
 knit_table(df=schema,context="experimentation")
 
 ```
+
+## Les personnes
+
+Il s'agit ici d'identifier les personnes impliquées dans la conduite de l'expérimentation. En particulier, il s'agira d'identifier une personne contact ayant une bonne connaissance de l'expérimentation pour pouvoir répondre et apporter éventuellement des informations complémentaires lors du partage et de la réutilisation des données. Un rôle est affectée à chaque personne (@tbl-metadata_person).
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-metadata_person
+#| tbl-cap: Métadonnées descriptives des personnes
+#| column: page
+
+knit_table(df=schema,context="person")
+
+```
+
+::: callout-important
+## Données à caractère personnel
+
+Attention, certaines données (noms, géolocalisation précise des parcelles) peuvent être des données à caractère personnel (DCP) et dans ce cas doivent respecter le Règlement Général sur la Protection des Données (RGPD). Un des principes du RGPD est de recueillir le consentement explicite et éclairé des personnes pour tout traitement des données à caractère personnel. En l'absence de ce consentement, il faudra **supprimer** ou **anonymiser** les DCP.
+:::
