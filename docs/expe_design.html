@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -183,8 +164,9 @@ div.csl-indent {
     <h2 id="toc-title">Table des matières</h2>
    
   <ul>
-  <li><a href="#le-vocabulaire" id="toc-le-vocabulaire" class="nav-link active" data-scroll-target="#le-vocabulaire"><span class="header-section-number">3.1</span> Le vocabulaire</a></li>
-  <li><a href="#le-plan-dexpérience" id="toc-le-plan-dexpérience" class="nav-link" data-scroll-target="#le-plan-dexpérience"><span class="header-section-number">3.2</span> Le plan d’expérience</a></li>
+  <li><a href="#lexpérimentation" id="toc-lexpérimentation" class="nav-link active" data-scroll-target="#lexpérimentation"><span class="header-section-number">3.1</span> L’expérimentation</a></li>
+  <li><a href="#les-facteurs" id="toc-les-facteurs" class="nav-link" data-scroll-target="#les-facteurs"><span class="header-section-number">3.2</span> Les facteurs</a></li>
+  <li><a href="#le-plan-dexpérience" id="toc-le-plan-dexpérience" class="nav-link" data-scroll-target="#le-plan-dexpérience"><span class="header-section-number">3.3</span> Le plan d’expérience</a></li>
   </ul>
 </nav>
     </div>
@@ -208,45 +190,74 @@ div.csl-indent {
 
 </header>
 
-<section id="le-vocabulaire" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="le-vocabulaire"><span class="header-section-number">3.1</span> Le vocabulaire</h2>
-<p>Au vignoble , l’expérimentation est généralement mis en place sur une <em>parcelle</em> ou unité culturale. Le <em>dispositif expérimental</em> est mis en place sur tout ou partie de la parcelle (<a href="#fig-dispositifexpe">Figure&nbsp;<span>3.1</span></a>), avec laquelle il partage un certain nombre de caractéristiques en dehors des traitements appliqués dans le cadre de l’expérimentation.</p>
-<p>On appelle <em>traitement expérimental</em> toute combinaison de niveaux ou de <em>modalités</em> des <em>facteurs</em> étudiés. Si un seul facteur est étudié, il y a identité entre un traitement et un niveau.</p>
-<p>La <em>parcelle unitaire</em> (ou élémentaire) est la plus petite unité expérimentale qui reçoit un traitement expérimental. Dans les essais au champ, elle est constituée d’une certaine étendue de terrain et d’un certain nombre de plants. L’ensemble des parcelles unitaires définit le <em>dispositif expérimental</em>.</p>
-<p>L’<em>unité d’observation</em> peut-être restreinte à une sous-partie de la parcelle unitaire (<a href="#fig-disp2">Figure&nbsp;<span>3.1 (b)</span></a>). En vigne, le terme de <em>placette</em> est souvent utilisé pour l’unité d’observation. Enfin, chaque placette est constituée d’un ensemble de plants de vigne, aussi appelés pieds, souches ou ceps.</p>
-<div id="fig-dispositifexpe" class="quarto-layout-panel">
-<figure class="figure">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-disp1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="DispositifExpe1.png" class="img-fluid figure-img" data-ref-parent="fig-dispositifexpe"></p>
-<p></p><figcaption class="figure-caption">(a) Vue d’ensemble</figcaption><p></p>
-</figure>
+<section id="lexpérimentation" class="level2 page-columns page-full" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="lexpérimentation"><span class="header-section-number">3.1</span> L’expérimentation</h2>
+<p>Généralement conduite au sein d’un projet, une expérimentation est une activité planifiée selon un protocole pour répondre à une question donnée. Tout comme le projet, elle peut être décrite par quelques métadonnées décrites dans le <a href="#tbl-metadata_expe">Table&nbsp;<span>3.1</span></a> ci-dessous.</p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-page">
+<div id="tbl-metadata_expe" class="anchored">
+<table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
+<caption>Table&nbsp;3.1: Métadonnées descriptives de l’expérimentation</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Label</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Nom</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Nom (ou code) usuel de l’expérimentation</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">MO-Vauvert</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Date de début</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Date de début de l’expérimentation. Elle est exprimée au format AAAA-MM-JJ suivant la norme internationale ISO 8601.</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">2009-03-01</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Date de fin</td>
+<td style="text-align: left;">Date de fin de l’expérimentation. Elle est exprimée au format AAAA-MM-JJ suivant la norme internationale ISO 8601.</td>
+<td style="text-align: left;">2020-12-31</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Objectif</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Description des objectifs poursuivis par l’expérimentation</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">L’objectif de cette action est d’améliorer le conseil en terme de gestion de la matière organique, par une meilleure connaissance du type de produit à apporter en liaison avec les besoins au niveau du sol et les effets attendus, tout en prenant en compte les conditions pédo-climatiques et les condit [...]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">Description de l’expérimentation</td>
+<td style="text-align: left;">Sur la parcelle gérée par l’IFV en Languedoc-Roussillon, les modalités mises en place sont les suivantes : - Témoin sans apports (TEM) - Apport compost déchets verts (DV) - Apport compost de marc (MARC) Les modalités ont été mises en place le 17 mars et le 23 mars 2009, avec un dispositif expéri [...]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Projet</td>
+<td style="text-align: left;">Acronyme du projet ou des projets associés à l'expérimentation</td>
+<td style="text-align: left;">OAD MO</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Organisation</td>
+<td style="text-align: left;">Nom de l'institution responsable de l'expérimentation</td>
+<td style="text-align: left;">IFV Pôle Rhône-Méditerranée</td>
+</tr>
+</tbody>
+</table>
 </div>
+
+
 </div>
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-disp2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="DispositifExpe2.png" class="img-fluid figure-img" data-ref-parent="fig-dispositifexpe"></p>
-<p></p><figcaption class="figure-caption">(b) Zoom sur une placette</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;3.1: Exemple de dispositif expérimental au vignoble</figcaption><p></p>
-</figure>
 </div>
 </section>
-<section id="le-plan-dexpérience" class="level2 page-columns page-full" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="le-plan-dexpérience"><span class="header-section-number">3.2</span> Le plan d’expérience</h2>
-<p>Les <em>facteurs</em> étudiés et leurs niveaux (ou <em>modalités</em>) sont décrits indépendamment du plan d’expérience (<a href="#tbl-metadata_factor">Table&nbsp;<span>3.1</span></a>). Une attention particulière doit être accordée à la description des facteurs.</p>
+<section id="les-facteurs" class="level2 page-columns page-full" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="les-facteurs"><span class="header-section-number">3.2</span> Les facteurs</h2>
+<p>Les <em>facteurs</em> étudiés et leurs niveaux (ou <em>modalités</em>) sont décrits indépendamment du plan d’expérience (<a href="#tbl-metadata_factor">Table&nbsp;<span>3.2</span></a>). Une attention particulière doit être accordée à la description des facteurs.</p>
 <p>Parmi les traitements, attention au terme générique <em>témoin</em>, dont la nature peut varier suivant les objectifs de l’expérience. Suivant les cas, il peut s’agir d’un témoin avec les pratiques du viticulteur, un témoin sans apport, et dans les essais de protection phytosanitaire on parle de témoin de vraisemblance ou de témoin non traité (ou TNT). Il est donc nécessaire de décrire précisément le traitement témoin pour éviter toute mauvaise interprétation des résultats.</p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display column-page">
 <div id="tbl-metadata_factor" class="anchored">
 <table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
-<caption>Table&nbsp;3.1: Description des facteurs étudiés</caption>
+<caption>Table&nbsp;3.2: Description des facteurs étudiés</caption>
 <colgroup>
 <col style="width: 25%">
 <col style="width: 25%">
@@ -271,13 +282,15 @@ div.csl-indent {
 <tr class="even">
 <td style="text-align: left;">Catégorie de facteur</td>
 <td style="text-align: left;">Type du facteur étudié</td>
-<td style="text-align: left;">Intrant</td>
+<td style="text-align: left;">fertilisant</td>
 <td style="text-align: left;">matériel végétal<br>
 intrant<br>
 traitement phytosanitaire<br>
 entretien du sol<br>
 mode de conduite<br>
-système</td>
+système<br>
+fertilisant<br>
+irrigation</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Niveau de facteur</td>
@@ -298,12 +311,15 @@ système</td>
 
 </div>
 </div>
-<p>Le dispositif en lui-même peut être décrit par quelques métadonnées (<a href="#tbl-metadata_design">Table&nbsp;<span>3.2</span></a>).</p>
+</section>
+<section id="le-plan-dexpérience" class="level2 page-columns page-full" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="le-plan-dexpérience"><span class="header-section-number">3.3</span> Le plan d’expérience</h2>
+<p>Le <em>plan d’expérience</em> en lui-même peut être décrit par quelques métadonnées (<a href="#tbl-metadata_design">Table&nbsp;<span>3.3</span></a>).</p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display column-page">
 <div id="tbl-metadata_design" class="anchored">
 <table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
-<caption>Table&nbsp;3.2: Description du plan d’expérience</caption>
+<caption>Table&nbsp;3.3: Description du plan d’expérience</caption>
 <colgroup>
 <col style="width: 25%">
 <col style="width: 25%">
@@ -377,65 +393,8 @@ Blocs incomplets</td>
 
 </div>
 </div>
-<p>Chaque <em>parcelle unitaire</em> (ou élémentaire) peut être définie par quelques champs de métadonnées proposés dans le <a href="#tbl-metadata_subplot">Table&nbsp;<span>3.3</span></a> ci-dessous. Les coordonnées relatives des parcelles unitaires peuvent être précisées mais dépendent du point de référence choisi par l’expérimentateur, souvent pour des considérations pratiques (accès de la parcelle). Les renseigner permet toutefois de générer le plan d’expérience et de tenir compte de leur position relative dans l’espace pour une représentation spatiale des données.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="tbl-metadata_subplot" class="anchored">
-<table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
-<caption>Table&nbsp;3.3: Métadonnées descriptives de la parcelle unitaire</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">Label</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Exemple</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Code de la parcelle unitaire</td>
-<td style="text-align: left;">Code de la parcelle unitaire (ou élémentaire) permettant son identification unique au sein de l'expérimentation</td>
-<td style="text-align: left;">M11</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Nombre de ceps</td>
-<td style="text-align: left;">Nombre de ceps dans la parcelle unitaire</td>
-<td style="text-align: left;">30</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Position x</td>
-<td style="text-align: left;">Position de la parcelle unitaire en coordonnées relatives x. Typiquement, cela peut être un numéro de rang.</td>
-<td style="text-align: left;">5</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Position y</td>
-<td style="text-align: left;">Position de la parcelle unitaire en coordonnées relatives y. Typiquement, cela peut être le numéro de la 1er souche de la placette à partir du début du rang.</td>
-<td style="text-align: left;">25</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Bloc</td>
-<td style="text-align: left;">Code du bloc surlequel se trouve la parcelle unitaire</td>
-<td style="text-align: left;">A</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Traitement</td>
-<td style="text-align: left;">Code du traitement appliqué sur la parcelle unitaire</td>
-<td style="text-align: left;">TEM</td>
-</tr>
-</tbody>
-</table>
-</div>
 
 
-</div>
-</div>
-<p>Le jeu de données lui-même devra être complété par un dictionnaire de données, explicitant les variables mesurées. Ces variables doivent être à chaque fois que c’est possible reliées à la Vitis Ontology<span class="citation" data-cites="duchene:hal-02947459">(<a href="references.html#ref-duchene:hal-02947459" role="doc-biblioref">Duchêne et Pommier 2019</a>)</span>.</p>
-
-
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-duchene:hal-02947459" class="csl-entry" role="listitem">
-Duchêne, Eric, et Cyril Pommier. 2019. <span>«&nbsp;<span>The Vitis Ontology: sustainable and FAIR (Findable, Accessible, Interoperable, Reusable) for consistent and complete data description through biologist friendly ontologies</span>&nbsp;»</span>. In <em><span>The First Annual Meeting of COST Action CA17111 INTEGRAPE 2019</span></em>. Chania, Greece, 26-28 March 2019, Greece. <a href="https://hal.inrae.fr/hal-02947459">https://hal.inrae.fr/hal-02947459</a>.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->

@@ -12,7 +12,7 @@ library(knitr)
 
 
 #### functions
-knit_table <- function(df,context,nchar_max=300,caption="")
+knit_table <- function(df,entity_selected,nchar_max=300,caption="")
 {
   options(knitr.kable.NA = '')
   df$example_fr <- substr(df$example_fr,start=1,stop=nchar_max) # to limit text size to 500 characters
@@ -20,7 +20,7 @@ knit_table <- function(df,context,nchar_max=300,caption="")
   df$example_fr[sel]<-paste0(df$example_fr[sel]," [...]") # to mark truncated texts
   df$description_fr[!is.na(df$source)]=paste0(df$description_fr[!is.na(df$source)]," [",df$source[!is.na(df$source)],"]") # to concatenate description and source
   df <- df %>%
-    filter(subcontext==context) %>%
+    filter(entity==entity_selected) %>%
     select(label_fr,description_fr,example_fr,enum,priority,order) %>%
     #mutate_if(is.numeric,round,digits=1) %>%
     mutate(enum=gsub(x=enum,pattern=",",replacement="<br>")) %>%

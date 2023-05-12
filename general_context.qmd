@@ -10,38 +10,18 @@ source("utils.R")
 
 ## Le projet
 
-Un projet (sous entendu "de recherche") est le cadre général dans lequel s'inscrivent des activités de recherche, dont en particulier une ou plusieurs expérimentations. Connaître le projet permet d'avoir une vision d'ensemble des activités conduites et de rechercher des documents ou compléments d'informations sur le contexte de l'étude. La connaissance du support financier peut aussi être importante pour définir le statut des données et leur vocation ou non à être ouvertes (qui peut être précisé dans le plan de gestion de données du projet). Les métadonnées descriptives du projet sont proposées dans @tbl-metadata_prj.
+Un projet (sous entendu "de recherche") est le cadre général dans lequel s'inscrivent des activités de recherche, dont en particulier une ou plusieurs expérimentations. Il fait généralement l'objet d'un contrat ou d'un accord de subvention avec les organismes de financement apportant un soutien financier.
+
+Connaître le projet permet d'avoir une vision d'ensemble des activités conduites et de rechercher des documents ou compléments d'informations sur le contexte de l'étude. La connaissance du support financier peut aussi être importante pour définir le statut des données et leur vocation ou non à être ouvertes (qui peut être précisé dans le plan de gestion de données du projet). Les métadonnées descriptives du projet sont proposées dans @tbl-metadata_project.
 
 ```{r}
 #| echo: false
 #| warning: false
-#| label: tbl-metadata_prj
+#| label: tbl-metadata_project
 #| tbl-cap: Métadonnées descriptives du projet
 #| column: page
 
-knit_table(df=schema,context="project")
-
-
-# metadata_prj <- schema %>%
-#   filter(subcontext=="project") %>%
-#   select(label_fr,description_fr,example_fr,type, enum)
-# kbl(metadata_prj) %>%
-#   kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
-
-```
-
-## L'expérimentation
-
-Généralement conduite au sein d'un projet, une expérimentation est une activité planifiée selon un protocole pour répondre à une question donnée. Tout comme le projet, elle peut être décrite par quelques métadonnées décrites dans le @tbl-metadata_expe ci-dessous.
-
-```{r}
-#| echo: false
-#| warning: false
-#| label: tbl-metadata_expe
-#| tbl-cap: Métadonnées descriptives de l'expérimentation
-#| column: page
-
-knit_table(df=schema,context="experimentation")
+knit_table(df=schema,entity_selected="project")
 
 ```
 
@@ -56,7 +36,7 @@ Il s'agit ici d'identifier les personnes impliquées dans la conduite de l'expé
 #| tbl-cap: Métadonnées descriptives des personnes
 #| column: page
 
-knit_table(df=schema,context="person")
+knit_table(df=schema,entity_selected="person")
 
 ```
 
@@ -65,3 +45,18 @@ knit_table(df=schema,context="person")
 
 Attention, certaines données (noms, géolocalisation précise des parcelles) peuvent être des données à caractère personnel (DCP) et dans ce cas doivent respecter le Règlement Général sur la Protection des Données (RGPD). Un des principes du RGPD est de recueillir le consentement explicite et éclairé des personnes pour tout traitement des données à caractère personnel. En l'absence de ce consentement, il faudra **supprimer** ou **anonymiser** les DCP.
 :::
+
+## Les annotations
+
+Les annotations sont des commentaires libres, qui permettent d'apporter des informations complémentaires synthétiques permettant de faciliter la compréhension et l'interprétation des données.
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-metadata_annotations
+#| tbl-cap: Métadonnées descriptives des annotations
+#| column: page
+
+knit_table(df=schema,entity_selected="annotation")
+
+```

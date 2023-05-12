@@ -198,17 +198,24 @@ div.csl-indent {
 
 </header>
 
-<p>Ce standard a été proposé dans le cadre du projet VITIS DATA CROP (CASDAR RT 2020). Ce projet a pour objectif de proposer un ensemble cohérent d’outils et des méthodes pour améliorer l’interopérabilité, le partage et l’ouverture des données. Un atelier autour du vocabulaire expérimental s’est tenu le 19 janvier 2023 lors du <a href="https://vignevin.quarto.pub/seminaire-data-2023/">séminaire</a> organisé dans le cadre de ce projet. Cet atelier a permis de collecter un ensemble de termes dans différents contextes.</p>
+<p>Ce standard a été proposé dans le cadre du projet VITIS DATA CROP (CASDAR RT 2020). Ce projet a pour objectif de proposer un ensemble cohérent d’outils et des méthodes pour améliorer l’interopérabilité, le partage et l’ouverture des données.</p>
+<p>Notre objectif est de proposer un schéma de données adapté à la description du contexte d’acquisition des données expérimentales au vignoble. Ce schéma de données est constitué d’une liste structurée d’entités, avec leur signification et les champs permettant de les décrire. Pour chaque champ, le schéma définira les valeurs qu’il est possible d’attribuer (terme issu d’une liste par exemple). <em>In fine</em>, il s’agit de faciliter l’interopérabilité des jeux de données produits par la communauté scientifique et technique vigne et vin qui pourront s’aligner avec ce schéma, ouvert et partagé.</p>
+<ul>
+<li><p>Un <strong>schéma de données</strong> ou modèles de données décrit comment les données sont organisées dans la base de stockage de données d’un système d’information. Un schéma de données est composé d’<strong>entités</strong> liées entre elles par des relations. Par exemple, une parcelle est une entité du schéma de donnée OSCAR.</p></li>
+<li><p>Des <strong>champs</strong> (ou attributs) décrivent chaque entité. Par exemple, la «&nbsp;densité de plantation&nbsp;» est un champ descriptif d'une parcelle viticole.</p></li>
+<li><p>Les <strong>vocabulaires</strong> sont les valeurs possibles des champs définis dans le schéma. Par exemple, le champ «&nbsp;variété&nbsp;» peut s'appuyer sur une liste (le vocabulaire) de variétés.</p></li>
+</ul>
+<p>Un atelier autour du vocabulaire expérimental s’est tenu le 19 janvier 2023 lors du <a href="https://vignevin.quarto.pub/seminaire-data-2023/">séminaire</a> organisé dans le cadre de ce projet. Cet atelier a permis de collecter un ensemble de termes dans différents contextes.</p>
 <p>Ces éléments ont été complétés par une revue de l’existant, en analysant les métadonnées proposées dans les systèmes d’informations existants :</p>
 <ul>
 <li><a href="http://vinnotec.supagro.inra.fr/public/Pg/index/index">Silex Porte-greffe</a> : système d’information qui a pour objectif de rassembler les données expérimentales existantes (en pépinière et au vignoble) sur les porte-greffes utilisés en viticulture (seule la partie vignoble a été analysée).</li>
 <li><a href="https://observatoire-cepages-resistants.fr/">Oscar</a> : dispositif participatif, constitué d’un réseau de parcelles en production plantées par les viticulteurs et suivis par des techniciens. Une base de données regroupant les informations est stockée sur la plateforme Epicure de l’IFV.</li>
 <li><a href="https://centredurose.fr/le-programme-du-centre-du-rose/projet-cepages-ocesar/">Ocesar</a> : système d’information centralisant les informations issues du réseau d’observations régional des parcelles de variétés innovantes, en région SUD.</li>
 <li>Sinfonia : système d’information IFV pour la gestion des données expérimentales vigne et vin</li>
-<li><a href="https://www6.inrae.fr/adonis">Adonis</a> : outil de collecte de données expérimentale INRAE <span class="citation" data-cites="EquipeprojetAdonis.2013">(<a href="#ref-EquipeprojetAdonis.2013" role="doc-biblioref">Equipe projet Adonis 2013</a>)</span></li>
+<li><a href="https://www6.inrae.fr/adonis">Adonis</a> : outil de collecte de données expérimentale INRAE <span class="citation" data-cites="EquipeprojetAdonis.2013">(<a href="references.html#ref-EquipeprojetAdonis.2013" role="doc-biblioref">Equipe projet Adonis 2013</a>)</span></li>
 <li>(VitisExplorer)</li>
 </ul>
-<p>Cette revue a été complétée par des approches similaires conduites lors de projets de mise en réseau : Recap&amp;Dep (Projet PNDV) ou le format MIAPPE, plus générique <span class="citation" data-cites="Krajewski.2015">(<a href="#ref-Krajewski.2015" role="doc-biblioref">Krajewski et al. 2015</a>)</span>.</p>
+<p>Cette revue a été complétée par des approches similaires conduites lors de projets de mise en réseau : Recap&amp;Dep (Projet PNDV) ou le format MIAPPE, plus générique <span class="citation" data-cites="Krajewski.2015">(<a href="references.html#ref-Krajewski.2015" role="doc-biblioref">Krajewski et al. 2015</a>)</span>.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -222,9 +229,20 @@ Avertissement
 <p>L’objectif n’est pas d’être exhaustif sur les métadonnées existantes dans ces différents projets, mais de proposer une sélection de métadonnées en recherchant un consensus de la communauté scientifique et technique vigne.</p>
 </div>
 </div>
+<p>La version actuelle de ce guide s’attache à proposer une description du contexte d’acquisition des données expérimentales, sans aller jusqu’au données mesurées sur le terrain par les expérimentateurs. En ce sens, nous n’avons pas inclus de proposition de champs descriptifs des objets mesurées (parcelles unitaires, ceps, organes, sol …). Les entités identifiées et décrites dans la suite de ce guide sont reprises sur <a href="#fig-entities">Figure&nbsp;<span>1.1</span></a></p>
+<div id="fig-entities" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Schema entité standard data.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1.1: Relations entre les entités du standard</figcaption><p></p>
+</figure>
+</div>
+<p>Ce travail devra être complété dans un second temps pour permettre d’associer les données à cette description du contexte. On peut à ce titre déjà souligner l’importance d’associer un dictionnaire de données explicitant les variables mesurées. Ces variables doivent être à chaque fois que c’est possible reliées à la Vitis Ontology<span class="citation" data-cites="duchene:hal-02947459">(<a href="references.html#ref-duchene:hal-02947459" role="doc-biblioref">Duchêne et Pommier 2019</a>)</span>.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-duchene:hal-02947459" class="csl-entry" role="listitem">
+Duchêne, Eric, et Cyril Pommier. 2019. <span>«&nbsp;<span>The Vitis Ontology: sustainable and FAIR (Findable, Accessible, Interoperable, Reusable) for consistent and complete data description through biologist friendly ontologies</span>&nbsp;»</span>. In <em><span>The First Annual Meeting of COST Action CA17111 INTEGRAPE 2019</span></em>. Chania, Greece, 26-28 March 2019, Greece. <a href="https://hal.inrae.fr/hal-02947459">https://hal.inrae.fr/hal-02947459</a>.
+</div>
 <div id="ref-EquipeprojetAdonis.2013" class="csl-entry" role="listitem">
 Equipe projet Adonis. 2013. <em>Adonis Bureau - Manuel Utilisateur</em>. Vol. Adonis version 3.4. INRAE. <a href="https://www6.inrae.fr/adonis/content/download/3567/33993/version/1/file/INRA_ADONIS_Manuel_Utilisateur_Bureau_V3-4.pdf">https://www6.inrae.fr/adonis/content/download/3567/33993/version/1/file/INRA_ADONIS_Manuel_Utilisateur_Bureau_V3-4.pdf</a>.
 </div>

@@ -8,6 +8,26 @@ source("utils.R")
 
 # Glossaire
 
+## Le vocabulaire de l'expérimentateur au vignoble
+
+Au vignoble , l'expérimentation est généralement mis en place sur une *parcelle* ou unité culturale. Le *dispositif expérimental* est mis en place sur tout ou partie de la parcelle (@fig-dispositifexpe), avec laquelle il partage un certain nombre de caractéristiques en dehors des traitements appliqués dans le cadre de l'expérimentation.
+
+On appelle *traitement expérimental* toute combinaison de niveaux ou de *modalités* des *facteurs* étudiés. Si un seul facteur est étudié, il y a identité entre un traitement et un niveau.
+
+La *parcelle unitaire* (ou élémentaire) est la plus petite unité expérimentale qui reçoit un traitement expérimental. Dans les essais au champ, elle est constituée d'une certaine étendue de terrain et d'un certain nombre de plants. L'ensemble des parcelles unitaires définit le *dispositif expérimental*.
+
+L'*unité d'observation* peut-être restreinte à une sous-partie de la parcelle unitaire (@fig-disp2). En vigne, le terme de *placette* est souvent utilisé pour l'unité d'observation. Enfin, chaque placette est constituée d'un ensemble de plants de vigne, aussi appelés pieds, souches ou ceps.
+
+::: {#fig-dispositifexpe layout-ncol="2"}
+![Vue d'ensemble](DispositifExpe1.png){#fig-disp1}
+
+![Zoom sur une placette](DispositifExpe2.png){#fig-disp2}
+
+Exemple de dispositif expérimental au vignoble
+:::
+
+## Définitions de quelques termes
+
 ```{r}
 #| echo: false
 #| warning: false
