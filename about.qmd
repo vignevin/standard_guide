@@ -1,0 +1,9 @@
+# A propos {.unnumbered}
+
+IFV, 2023
+
+Pour toute question ou remarque, rendez-vous sur <https://github.com/vignevin/standard_guide> et poster une nouvelle "issue".
+
+Ce guide a été réalisé dans le cadre du projet VITIS DATA CROP lauréat de l'appel à projet CASDAR Recherche-Technologique 2020, avec le soutien du Ministère de l'Agriculture et de l'Alimentation, avec la contribution financière du compte d'affectation spéciale développement agricole et rural.
+
+![](images/Logo%20MAA-CASDAR.png){fig-align="center" width="318"}

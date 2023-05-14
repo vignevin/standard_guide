@@ -25,11 +25,13 @@ knit_table(df=schema,entity_selected="experimentation")
 
 ## Les facteurs
 
-Un *facteur* est défini comme toute série d'éléments de même nature qui peuvent être comparés au cours d’une expérience, tels qu’une série de variétés, un ensemble de produits phytosanitaires, différentes doses d’un même engrais, différentes températures, différentes pressions, etc.
+Un *facteur* est défini comme toute série d'éléments de même nature qui peuvent être comparés au cours d'une expérience, tels qu'une série de variétés, un ensemble de produits phytosanitaires, différentes doses d'un même engrais, différentes températures, différentes pressions, etc.
 
 Les *facteurs* étudiés et leurs niveaux (ou *modalités*) sont décrits indépendamment du plan d'expérience (@tbl-metadata_factor). Une attention particulière doit être accordée à la description des facteurs.
 
-Parmi les traitements, attention au terme générique *témoin*, dont la nature peut varier suivant les objectifs de l'expérience. Suivant les cas, il peut s'agir d'un témoin avec les pratiques du viticulteur, un témoin sans apport, et dans les essais de protection phytosanitaire on parle de témoin de vraisemblance ou de témoin non traité (ou TNT). Il est donc nécessaire de décrire précisément le traitement témoin pour éviter toute mauvaise interprétation des résultats.
+::: callout-warning
+Attention au terme générique *témoin*, dont la nature peut varier suivant les objectifs de l'expérience. Suivant les cas, il peut s'agir d'un témoin avec les pratiques du viticulteur, un témoin sans apport, et dans les essais de protection phytosanitaire on parle de témoin de vraisemblance ou de témoin non traité (ou TNT). Il est donc nécessaire de décrire précisément le traitement témoin pour éviter toute mauvaise interprétation des résultats.
+:::
 
 ```{r}
 #| echo: false
@@ -43,7 +45,7 @@ knit_table(df=schema,entity_selected="factor")
 
 ## Le plan d'expérience
 
-Le *plan d'expérience* est l’ensemble des règles et procédures par lesquelles les traitements sont affectés aux unités expérimentales. Le *plan d'expérience* en lui-même peut être décrit par quelques métadonnées (@tbl-metadata_design).
+Le *plan d'expérience* est l'ensemble des règles et procédures par lesquelles les facteurs sont affectés aux unités expérimentales. Le *plan d'expérience* en lui-même peut être décrit par quelques métadonnées (@tbl-metadata_design).
 
 ```{r}
 #| echo: false

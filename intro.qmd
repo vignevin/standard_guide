@@ -6,9 +6,9 @@ Notre objectif est de proposer un schéma de données adapté à la description 
 
 -   Un **schéma de données** ou modèles de données décrit comment les données sont organisées dans la base de stockage de données d'un système d'information. Un schéma de données est composé d'**entités** liées entre elles par des relations. Par exemple, une parcelle est une entité du schéma de donnée OSCAR.
 
--   Des **champs** (ou attributs) décrivent chaque entité. Par exemple, la « densité de plantation » est un champ descriptif d\'une parcelle viticole.
+-   Des **champs** (ou attributs) décrivent chaque entité. Par exemple, la « densité de plantation » est un champ descriptif d'une parcelle viticole.
 
--   Les **vocabulaires** sont les valeurs possibles des champs définis dans le schéma. Par exemple, le champ « variété » peut s\'appuyer sur une liste (le vocabulaire) de variétés.
+-   Les **vocabulaires** sont les valeurs possibles des champs définis dans le schéma. Par exemple, le champ « variété » peut s'appuyer sur une liste (le vocabulaire) de variétés.
 
 Un atelier autour du vocabulaire expérimental s'est tenu le 19 janvier 2023 lors du [séminaire](https://vignevin.quarto.pub/seminaire-data-2023/) organisé dans le cadre de ce projet. Cet atelier a permis de collecter un ensemble de termes dans différents contextes.
 

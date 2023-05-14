@@ -49,8 +49,10 @@ book:
     - expe_design.qmd
     - vineyard_context.qmd
     - references.qmd
+    - about.qmd
   appendices:
     - glossary.qmd
+    - schema_xp.qmd
 
 bibliography: references.bib
 
