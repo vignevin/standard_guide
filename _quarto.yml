@@ -53,14 +53,15 @@ book:
   appendices:
     - glossary.qmd
     - schema_xp.qmd
+    - soilManagementCode.qmd
 
 bibliography: references.bib
 
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
+  # pdf:
+  #   documentclass: scrreprt
 
 editor: visual
 lang: fr

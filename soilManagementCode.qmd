@@ -1,0 +1,26 @@
+# Codage de la stratégie d'entretien du sol sur une parcelle viticole
+
+La **stratégie d'entretien des sols** est la combinaison des techniques culturales mises en œuvre sur la parcelle. Ces techniques répondent à l'objectif principal de contrôler le développement des adventices sur une parcelle. Les viticulteurs peuvent ainsi recourir au désherbage mécanique, thermique ou chimique, à un enherbement semé fauché ou roulé, au paillage...sur tout ou partie des inter-rangs et sous le rang.
+
+Pour décrire cette stratégie, un code est utilisé pour définir le motif élémentaire de la stratégie sur la parcelle. Le motif élémentaire est la combinaison de techniques qui se répète dans la parcelle.
+
+Chaque type d'entretien du sol est codé par une lettre ou une combinaison de lettres dans l'inter-rang, et par un chiffre sous le rang.
+
+| Zone         | Type d'entretien du sol        | Code |
+|--------------|--------------------------------|------|
+| Inter-rang   | Enherbement semé               | S    |
+| Inter-rang   | Enherbement spontané           | I    |
+| Inter-rang   | Enherbement permanent          | p    |
+| Inter-rang   | Enherbement temporaire         | t    |
+| Inter-rang   | Désherbage mécanique           | M    |
+| Inter-rang   | Désherbage chimique            | C    |
+| Inter-rang   | Désherbage thermique           | H    |
+| Sous le rang | Désherbage chimique            | 1    |
+| Sous le rang | Désherbage mécanique           | 2    |
+| Sous le rang | Enherbement permanent semé     | 3    |
+| Sous le rang | Enherbement permanent spontané | 4    |
+| Sous le rang | Paillage                       | 5    |
+
+La @fig-code ci-dessous décrit quelques exemples de stratégie d'entretien du sol sur une parcelle viticole et le code associé.
+
+![Exemple de stratégies d'entretien des sols et codes associés](codeSoilManagementExample.png){#fig-code}

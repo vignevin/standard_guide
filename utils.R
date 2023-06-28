@@ -15,20 +15,21 @@ library(knitr)
 knit_table <- function(df,entity_selected,nchar_max=300,caption="")
 {
   options(knitr.kable.NA = '')
-  df$example_fr <- substr(df$example_fr,start=1,stop=nchar_max) # to limit text size to 500 characters
-  sel<-(!is.na(df$example_fr)&nchar(df$example_fr)==nchar_max)
-  df$example_fr[sel]<-paste0(df$example_fr[sel]," [...]") # to mark truncated texts
-  df$description_fr[!is.na(df$source)]=paste0(df$description_fr[!is.na(df$source)]," [",df$source[!is.na(df$source)],"]") # to concatenate description and source
+  df$example <- substr(df$example,start=1,stop=nchar_max) # to limit text size to 500 characters
+  sel<-(!is.na(df$example)&nchar(df$example)==nchar_max)
+  df$example[sel]<-paste0(df$example[sel]," [...]") # to mark truncated texts
+  df$description[!is.na(df$source)]=paste0(df$description[!is.na(df$source)]," [",df$source[!is.na(df$source)],"]") # to concatenate description and source
   df <- df %>%
-    filter(entity==entity_selected) %>%
-    select(label_fr,description_fr,example_fr,enum,priority,order) %>%
+    filter(name==entity_selected) %>%
+    filter(core == "true") %>%
+    select(label_fr,description,example,enumList,priority,order) %>%
     #mutate_if(is.numeric,round,digits=1) %>%
-    mutate(enum=gsub(x=enum,pattern=",",replacement="<br>")) %>%
+    mutate(enumList=gsub(x=enumList,pattern=",",replacement="<br>")) %>%
     rename("Label"="label_fr",
-           "Description"="description_fr",
-           "Exemple"="example_fr",
+           "Description"="description",
+           "Exemple"="example",
            #"Type"="type",
-           "Liste"="enum") %>%
+           "Liste"="enumList") %>%
     arrange(order)
   
   df %>% # mise en forme

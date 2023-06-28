@@ -19,7 +19,9 @@ termes<-c("parcelle","dispositif expérimental","parcelle unitaire","traitement 
           "modalité","facteur", "témoin",
           "témoin non traité (TNT)",
           "projet","expérimentation",
-          "plan de gestion de données","jeu de données","dictionnaire de données")
+          "plan de gestion de données","jeu de données","dictionnaire de données",
+          "enherbement semé","enherbement spontané","enherbement permanent","enherbement   temporaire","désherbage mécanique","désherbage chimique","désherbage thermique","paillage"
+)
 
 glossary <- thesaurus %>%
   select(terme_fr,definition_fr) %>%
