@@ -42,6 +42,10 @@ book:
   - name: Joseph Tran
     affiliations:
       - INRAE
+  - name: Catherine Roussey
+    orcid: 0000-0002-3076-5499
+    affiliations:
+      - INRAE
   chapters:
     - index.qmd
     - intro.qmd

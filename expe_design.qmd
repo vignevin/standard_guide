@@ -10,7 +10,7 @@ source("utils.R")
 
 ## L'expérimentation
 
-Généralement conduite au sein d'un projet, une *expérimentation* est une activité planifiée selon un protocole pour répondre à une question donnée. Tout comme le projet, elle peut être décrite par quelques métadonnées décrites dans le @tbl-metadata_expe ci-dessous.
+Généralement conduite au sein d'un projet, une *expérimentation* est une activité planifiée consistant à observer un ensemble d'objets suivant un protocole préétabli pour tester une hypothèse, répondre à une question ou découvrir de nouveaux faits. Tout comme le projet, elle peut être décrite par quelques métadonnées décrites dans le @tbl-metadata_expe ci-
 
 ```{r}
 #| echo: false
@@ -56,3 +56,13 @@ Le *plan d'expérience* est l'ensemble des règles et procédures par lesquelles
 
 knit_table(df=schema,entity_selected="design")
 ```
+
+::: callout-note
+## Quelques cas particuliers d'expérimentations
+
+-   Si le même protocole (mêmes traitements expérimentaux et un ensemble de mesures majoritairement commun) est mis en place dans plusieurs sites (parcelles, caves), il s'agit d'une seule et même expérimentation, dite en réseau.
+
+-   Si le protocole varie selon les sites, en particulier dans la définition des traitements, il s'agit alors d'expérimentations différentes partageant un objectif commun, et regroupées généralement sous un même projet.
+
+-   Les réseaux d'observations (ou observatoires) : dans le cadre d'un réseau d'observation, un seul (ou aucun) traitement expérimental est évalué, et en particulier il n'y a pas de traitement témoin ou contrôle. Un observatoire peut être considéré comme un cas particulier d'expérimentation, le standard proposé ici peut s'appliquer, mais l'analyse statistique des données nécessitera des techniques appropriées. Préciser la catégorie de facteur permet de définir la thématique de l'observatoire.
+:::
