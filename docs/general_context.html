@@ -134,6 +134,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Les observations et les données collectées</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -218,46 +224,64 @@ ul.task-list li input[type="checkbox"] {
 <div id="tbl-metadata_project" class="anchored">
 <table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
 <caption>Table&nbsp;2.1: Métadonnées descriptives du projet</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">Label</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Label (nom)</th>
 <th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
 <th style="text-align: left;" data-quarto-table-cell-role="th">Exemple</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Titre du projet</td>
+<td style="text-align: left;">URI projet<br>
+(proj_uri)</td>
+<td style="text-align: left;">URI du projet</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Titre du projet<br>
+(proj_title)</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Titre du projet</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Elaboration d’un outil d’aide à la décision pour la gestion du patrimoine organique des sols viticoles. Paramétrage et validation du modèle AMG</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Acronyme</td>
+<tr class="odd">
+<td style="text-align: left;">Acronyme<br>
+(proj_acronym)</td>
 <td style="text-align: left;">Acronyme du projet</td>
 <td style="text-align: left;">OAD MO</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Date début</td>
+<tr class="even">
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Date début<br>
+(proj_start_date)</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Date de début du projet. Elle est exprimée au format AAAA-MM-JJ suivant la norme internationale ISO 8601.</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">2016-07-01</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Date fin</td>
+<tr class="odd">
+<td style="text-align: left;">Date fin<br>
+(proj_end_date)</td>
 <td style="text-align: left;">Date de fin du projet. Elle est exprimée au format AAAA-MM-JJ suivant la norme internationale ISO 8601.</td>
 <td style="text-align: left;">2017-06-30</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Objectif</td>
+<tr class="even">
+<td style="text-align: left;">Objectif<br>
+(proj_obj)</td>
 <td style="text-align: left;">Description des objectifs poursuivis</td>
 <td style="text-align: left;">L'objectif de cette action est d'améliorer le conseil en termes de gestion de la matière organique, par une meilleure connaissance du type de produit à apporter en liaison avec les besoins au niveau du sol et les effets attendus, tout en prenant en compte les conditions pédo-climatiques et les condi [...]</td>
 </tr>
-<tr class="even">
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Description</td>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Description<br>
+(proj_desc)</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Description du projet</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Un réseau de 6 parcelles a été mis en place à l'échelle nationale. Sur ce réseau, il s’agit d’acquérir les données concernant le sol, la plante et les produits épandus (variables selon les sites). Les parcelles d’expérimentation ont été mises en place l’hiver 2008-2009 pour certaines et l’hiver 200 [...]</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Support financier</td>
+<tr class="even">
+<td style="text-align: left;">Support financier<br>
+(ex_funding_source)</td>
 <td style="text-align: left;">Support financier du projet</td>
 <td style="text-align: left;">&nbsp;FranceAgriMer</td>
 </tr>
@@ -285,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">Label</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Label (nom)</th>
 <th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
 <th style="text-align: left;" data-quarto-table-cell-role="th">Exemple</th>
 <th style="text-align: left;" data-quarto-table-cell-role="th">Liste</th>
@@ -293,19 +317,22 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Contact nom</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Contact nom<br>
+(person_name)</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Prénon, Nom de la personne</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Jean, Durand</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Contact email</td>
+<td style="text-align: left;">Contact email<br>
+(e_mail_adress)</td>
 <td style="text-align: left;">Email de la personne</td>
 <td style="text-align: left;">jean.durand@myemail.com</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Rôle</td>
+<td style="text-align: left;">Rôle<br>
+(researcher_role)</td>
 <td style="text-align: left;">Rôle de la personne dans l'expérimentation</td>
 <td style="text-align: left;">responsable expérimentation</td>
 <td style="text-align: left;">coordinateur du projet<br>
@@ -343,23 +370,43 @@ Données à caractère personnel
 <div id="tbl-metadata_annotations" class="anchored">
 <table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
 <caption>Table&nbsp;2.3: Métadonnées descriptives des annotations</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">Label</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Label (nom)</th>
 <th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
 <th style="text-align: left;" data-quarto-table-cell-role="th">Exemple</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Liste</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Résultats</td>
-<td style="text-align: left;">Commentaire sur les résultats obtenus</td>
-<td style="text-align: left;">Après 10 ans de suivis et 3 apports de compost, le statut organique du sol a été amélioré, que ce soit avec le compost de déchets verts ou celui de marc. La modalité témoin sans apport voit aussi son taux de matière organique en surface augmenter significativement, bien que dans une moindre mesure. [...]</td>
+<td style="text-align: left;">Type<br>
+(annot_type)</td>
+<td style="text-align: left;">Type d'annotation</td>
+<td style="text-align: left;">événement</td>
+<td style="text-align: left;">Remarque<br>
+Résultat<br>
+Evénement</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Evenement</td>
-<td style="text-align: left;">Description des évenements marquants</td>
+<td style="text-align: left;">Date<br>
+(annot_date)</td>
+<td style="text-align: left;">Date de l'annotation</td>
+<td style="text-align: left;">2008-06-21</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Description<br>
+(annot_desc)</td>
+<td style="text-align: left;">Description de l'annotation</td>
 <td style="text-align: left;">Forte attaque de mildiou en 2008, avec 30% de pertes de récolte</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>

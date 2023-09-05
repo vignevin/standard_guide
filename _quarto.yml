@@ -4,7 +4,8 @@ project:
 
 book:
   title: "Guide pour la description d'une expérimentation en vigne"
-  date: 2023-02-15
+  original-date: 2023-02-15	
+  date: 2023-09-05
   author: 
   - name: Xavier Delpuech
     corresponding: true
@@ -52,6 +53,7 @@ book:
     - general_context.qmd
     - expe_design.qmd
     - vineyard_context.qmd
+    - data.qmd
     - references.qmd
     - about.qmd
   appendices:

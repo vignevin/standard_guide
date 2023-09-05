@@ -23,11 +23,31 @@ knit_table(df=schema,entity_selected="experimentation")
 
 ```
 
-## Les facteurs
+## Les modalités et les traitements expérimentaux
+
+Lors d'une expérimentation, l'objectif est généralement de comparer les effets de différents traitements expérimentaux sur une population.
 
 Un *facteur* est défini comme toute série d'éléments de même nature qui peuvent être comparés au cours d'une expérience, tels qu'une série de variétés, un ensemble de produits phytosanitaires, différentes doses d'un même engrais, différentes températures, différentes pressions, etc.
 
-Les *facteurs* étudiés et leurs niveaux (ou *modalités*) sont décrits indépendamment du plan d'expérience (@tbl-metadata_factor). Une attention particulière doit être accordée à la description des facteurs.
+### Les modalités
+
+Chaque facteur étudié peut prendre plusieurs valeurs (par exemple, une fertilisation de 30U N/ha comparée à 60U N/ha). Ces différentes valeurs liées à un facteur sont appelées *niveaux* ou *modalités*. Le premier terme étant plutôt employé pour un facteur quantitatif et le deuxième pour un facteur qualitatif.
+
+Les niveaux (ou *modalités*) des facteurs étudiés sont décrits indépendamment du plan d'expérience (@tbl-metadata_factor). Une attention particulière doit être accordée à la description des modalités.
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-metadata_factor
+#| tbl-cap: Description des modalités étudiées
+#| column: page
+
+knit_table(df=schema,entity_selected="factor")
+```
+
+### Les traitements expérimentaux
+
+Les traitements expérimentaux (parfois appelés objet) sont toute modalité d'un facteur unique ou combinaison de modalités de deux ou plusieurs facteurs étudiés. Les traitements expérimentaux sont appliqués sur le terrain selon le plan d'expérience. Ils sont décrits spécifiquement (@tbl-metadata_trt).
 
 ::: callout-warning
 Attention au terme générique *témoin*, dont la nature peut varier suivant les objectifs de l'expérience. Suivant les cas, il peut s'agir d'un témoin avec les pratiques du viticulteur, un témoin sans apport, et dans les essais de protection phytosanitaire on parle de témoin de vraisemblance ou de témoin non traité (ou TNT). Il est donc nécessaire de décrire précisément le traitement témoin pour éviter toute mauvaise interprétation des résultats.
@@ -36,11 +56,11 @@ Attention au terme générique *témoin*, dont la nature peut varier suivant les
 ```{r}
 #| echo: false
 #| warning: false
-#| label: tbl-metadata_factor
-#| tbl-cap: Description des facteurs étudiés
+#| label: tbl-metadata_trt
+#| tbl-cap: Description des traitements expérimentaux
 #| column: page
 
-knit_table(df=schema,entity_selected="factor")
+knit_table(df=schema,entity_selected="treatment")
 ```
 
 ## Le plan d'expérience

@@ -21,4 +21,6 @@ A noter qu'il existe des standards de description des ressources plus génériqu
 
 Ce guide reprend une description de ce standard dans un format mis en page. Ce standard sera aussi disponible sous différents formats plus adaptés à l'interopérabilité informatique (schéma csv, xml, rdf).
 
+Un [modèle Excel](https://github.com/vignevin/vitisdatacrop/blob/main/template.xlsx?raw=true) est disponible en ligne.
+
 Les définitions des termes principaux sont proposés en annexe.

@@ -1,0 +1,45 @@
+```{r load_utils}
+#| echo: false
+#| warning: false
+
+source("utils.R")
+
+```
+
+# Les observations et les données collectées
+
+Lors d'une expérimentation, diverses observations sont réalisés sur le dispositif expérimental. Ces observations sont codés sous forme de données quantitatives ou qualitatives, et sont stockées dans des tableaux de données. Chaque ligne correspond à un enregistrement et les colonnes correspondent aux variables mesurées.
+
+## Le dictionnaire des données
+
+Il est nécessaire de rédiger un *dictionnaire de données* pour expliciter les variables mesurées. Pour un fichier tabulé, il s'agit de spécifier les entêtes des colonnes, les unités utilisées, les acronymes, etc. Un modèle de dictionnaire de données est proposé dans @tbl-metadata_dic.
+
+Afin de rendre vos données interopérables, il est nécessaire d'aligner les variables observées de vos fichiers avec une liste de référence. En vigne, la Vitis Ontology assure cette fonction de référentiel, et peut être consulté sur le [centre de ressource](https://vitioeno.mistea.inrae.fr/resource/app/ "Centre de ressources Vigne & Vin") vigne & vin.
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-metadata_dic
+#| tbl-cap: Contenu du dictionnaire des données
+#| column: page
+
+knit_table(df=schema,entity_selected="data_dictionnary")
+
+```
+
+## Le contexte de mesure
+
+Pour être interprétable, toute mesure doit être contextualisée. Il est dont recommandé d'intégrer dans les tableaux de données quelques variables de contexte @tbl-metadata_measure. L'utilisation du nom de variable standardisé permet l'interopérabilité entre les jeux de données.
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-metadata_measure
+#| tbl-cap: Variables de contexte
+#| column: page
+
+knit_table(df=schema,entity_selected="measure")
+
+```
+
+

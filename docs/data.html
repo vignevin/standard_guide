@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Guide pour la description d’une expérimentation en vigne - A propos</title>
+<title>Guide pour la description d’une expérimentation en vigne - 5&nbsp; Les observations et les données collectées</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./glossary.html" rel="next">
-<link href="./references.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./vineyard_context.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -62,6 +62,9 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 </head>
 
@@ -74,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">A propos</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Les observations et les données collectées</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -131,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data.html" class="sidebar-item-text sidebar-link">
+  <a href="./data.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Les observations et les données collectées</span></span></a>
   </div>
 </li>
@@ -143,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link active">
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">A propos</span></a>
   </div>
 </li>
@@ -182,14 +185,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table des matières</h2>
+   
+  <ul>
+  <li><a href="#le-dictionnaire-des-données" id="toc-le-dictionnaire-des-données" class="nav-link active" data-scroll-target="#le-dictionnaire-des-données"><span class="header-section-number">5.1</span> Le dictionnaire des données</a></li>
+  <li><a href="#le-contexte-de-mesure" id="toc-le-contexte-de-mesure" class="nav-link" data-scroll-target="#le-contexte-de-mesure"><span class="header-section-number">5.2</span> Le contexte de mesure</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">A propos</h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Les observations et les données collectées</span></h1>
 </div>
 
 
@@ -204,16 +214,171 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>IFV, 2023</p>
-<p>Pour toute question ou remarque, rendez-vous sur <a href="https://github.com/vignevin/standard_guide" class="uri">https://github.com/vignevin/standard_guide</a> et poster une nouvelle “issue”.</p>
-<p>Ce guide a été réalisé dans le cadre du projet VITIS DATA CROP lauréat de l’appel à projet CASDAR Recherche-Technologique 2020, avec le soutien du Ministère de l’Agriculture et de l’Alimentation, avec la contribution financière du compte d’affectation spéciale développement agricole et rural.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Logo MAA-CASDAR.png" class="img-fluid figure-img" width="318"></p>
-</figure>
+<p>Lors d’une expérimentation, diverses observations sont réalisés sur le dispositif expérimental. Ces observations sont codés sous forme de données quantitatives ou qualitatives, et sont stockées dans des tableaux de données. Chaque ligne correspond à un enregistrement et les colonnes correspondent aux variables mesurées.</p>
+<section id="le-dictionnaire-des-données" class="level2 page-columns page-full" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="le-dictionnaire-des-données"><span class="header-section-number">5.1</span> Le dictionnaire des données</h2>
+<p>Il est nécessaire de rédiger un <em>dictionnaire de données</em> pour expliciter les variables mesurées. Pour un fichier tabulé, il s’agit de spécifier les entêtes des colonnes, les unités utilisées, les acronymes, etc. Un modèle de dictionnaire de données est proposé dans <a href="#tbl-metadata_dic">Table&nbsp;<span>5.1</span></a>.</p>
+<p>Afin de rendre vos données interopérables, il est nécessaire d’aligner les variables observées de vos fichiers avec une liste de référence. En vigne, la Vitis Ontology assure cette fonction de référentiel, et peut être consulté sur le <a href="https://vitioeno.mistea.inrae.fr/resource/app/" title="Centre de ressources Vigne &amp; Vin">centre de ressource</a> vigne &amp; vin.</p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-page">
+<div id="tbl-metadata_dic" class="anchored">
+<table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
+<caption>Table&nbsp;5.1: Contenu du dictionnaire des données</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Label (nom)</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Exemple</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Liste</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Nom de variable<br>
+(variable_name)</td>
+<td style="text-align: left;">Nom de la variable dans les fichiers de données</td>
+<td style="text-align: left;">pH</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Description<br>
+(var_desc)</td>
+<td style="text-align: left;">Description de la variable</td>
+<td style="text-align: left;">pH mesuré à maturité sur baies</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Type de données<br>
+(data_type)</td>
+<td style="text-align: left;">Type de données</td>
+<td style="text-align: left;">numérique</td>
+<td style="text-align: left;">numérique<br>
+texte<br>
+date</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Unité<br>
+(unit)</td>
+<td style="text-align: left;">Unité de la variable</td>
+<td style="text-align: left;">sans unité</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Caractéristique<br>
+(var_trait)</td>
+<td style="text-align: left;">Caractéristique (trait) mesuré</td>
+<td style="text-align: left;">pH du moût</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Méthode<br>
+(var_method)</td>
+<td style="text-align: left;">Méthode de mesure</td>
+<td style="text-align: left;">pHmètre</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">URI référence<br>
+(var_ref_uri)</td>
+<td style="text-align: left;">URI de la variable de référence (Vitis Ontology)</td>
+<td style="text-align: left;">https://cropontology.org/term/CO_356:1000185</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Nom référence<br>
+(var_ref_name)</td>
+<td style="text-align: left;">Nom de la variable de référence (nom standardisé).</td>
+<td style="text-align: left;">MUST_pH</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Conversion référence<br>
+(var_ref_conv)</td>
+<td style="text-align: left;">Facteur de conversion vers la variable de référence</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
+</div>
+</div>
+</section>
+<section id="le-contexte-de-mesure" class="level2 page-columns page-full" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="le-contexte-de-mesure"><span class="header-section-number">5.2</span> Le contexte de mesure</h2>
+<p>Pour être interprétable, toute mesure doit être contextualisée. Il est dont recommandé d’intégrer dans les tableaux de données quelques variables de contexte <a href="#tbl-metadata_measure">Table&nbsp;<span>5.2</span></a>. L’utilisation du nom de variable standardisé permet l’interopérabilité entre les jeux de données.</p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-page">
+<div id="tbl-metadata_measure" class="anchored">
+<table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
+<caption>Table&nbsp;5.2: Variables de contexte</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Label (nom)</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Nom de la parcelle<br>
+(field_name)</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Nom (ou code) de la parcelle sur laquelle l’expérimentation a lieu</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Syrah prestige</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Code traitement expérimental<br>
+(treatment_name)</td>
+<td style="text-align: left;">Code du traitement expérimental appliqué</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Répétition<br>
+(replicate)</td>
+<td style="text-align: left;">Code de la répétition du traitement expérimental (bloc, numéro...)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Millésime<br>
+(vintage)</td>
+<td style="text-align: left;">Année au cours de laquelle les raisins ont été récoltés</td>
+<td style="text-align: left;">2010</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Date de mesure<br>
+(date_of_measurement)</td>
+<td style="text-align: left;">Date de réalisation de la mesure. Format AAAA-MM-JJ</td>
+<td style="text-align: left;">2023-06-13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Stade phénologique<br>
+(growth_stage)</td>
+<td style="text-align: left;">Stade phénologique lors de la mesure (échelle BBCH)</td>
+<td style="text-align: left;">BBCH 57</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</div>
+</div>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -451,13 +616,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./references.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">References</span>
+      <a href="./vineyard_context.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le contexte viticole</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./glossary.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossaire</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -19,13 +19,16 @@ knit_table <- function(df,entity_selected,nchar_max=300,caption="")
   sel<-(!is.na(df$example)&nchar(df$example)==nchar_max)
   df$example[sel]<-paste0(df$example[sel]," [...]") # to mark truncated texts
   df$description[!is.na(df$source)]=paste0(df$description[!is.na(df$source)]," [",df$source[!is.na(df$source)],"]") # to concatenate description and source
+  df <- df[grep(entity_selected,strsplit(df$name, split=",", fixed = TRUE)),]
   df <- df %>%
-    filter(name==entity_selected) %>%
+    #filter(name == entity_selected) %>%
     filter(core == "true") %>%
-    select(label_fr,description,example,enumList,priority,order) %>%
+    select(label_fr,property,description,example,enumList,priority,order) %>%
     #mutate_if(is.numeric,round,digits=1) %>%
     mutate(enumList=gsub(x=enumList,pattern=",",replacement="<br>")) %>%
-    rename("Label"="label_fr",
+    mutate(label_fr=paste0(label_fr,"<br>(",property,")")) %>%
+    rename("Label (nom)"="label_fr",
+           #"Nom" = "property",
            "Description"="description",
            "Exemple"="example",
            #"Type"="type",
@@ -33,7 +36,7 @@ knit_table <- function(df,entity_selected,nchar_max=300,caption="")
     arrange(order)
   
   df %>% # mise en forme
-    select(!"priority"&!"order") %>% # suppression colonne priority
+    select(!"priority"&!"order"&!"property") %>% # suppression colonne priority
     select(where(~ !(all(is.na(.)) | all(. == "")))) %>% # remove empty col
     knitr::kable(format="html",escape="F",caption=caption) %>%
 #    unclass() %>% cat()
