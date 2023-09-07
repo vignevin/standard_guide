@@ -140,6 +140,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./implementation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Mise en oeuvre</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -238,28 +244,16 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Parcelle<br>
-(est_field)</td>
-<td style="text-align: left;">Identifiant de la parcelle expérimentale (URI ou autre)</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">Nom de l'exploitation<br>
 (est_name)</td>
 <td style="text-align: left;">Nom de l'exploitation agricole (ou domaine)</td>
 <td style="text-align: left;">Domaine Cabanis</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Adresse de l'exploitation<br>
 (est_adress)</td>
 <td style="text-align: left;">Adresse postale de l'exploitation</td>
 <td style="text-align: left;">Mas Madagascar, 30600 Vauvert</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Surface en vigne (ha)<br>
-(est_area_vine)</td>
-<td style="text-align: left;">Surface exploitée en vigne en ha</td>
-<td style="text-align: left;">15</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Numéro CVI<br>
@@ -268,16 +262,28 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">SIRET<br>
+(est_siret)</td>
+<td style="text-align: left;">Numéro SIRET de l'exploitation</td>
+<td style="text-align: left;">78320402700032</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">Description<br>
 (est_desc)</td>
 <td style="text-align: left;">Description ou commentaire sur l'exploitation</td>
 <td style="text-align: left;"></td>
 </tr>
+<tr class="even">
+<td style="text-align: left;">Surface en vigne (ha)<br>
+(est_area_vine)</td>
+<td style="text-align: left;">Surface exploitée en vigne en ha</td>
+<td style="text-align: left;">15</td>
+</tr>
 <tr class="odd">
-<td style="text-align: left;">SIRET<br>
-(est_siret)</td>
-<td style="text-align: left;">Numéro SIRET de l'exploitation</td>
-<td style="text-align: left;">78320402700032</td>
+<td style="text-align: left;">Parcelle<br>
+(est_field)</td>
+<td style="text-align: left;">Identifiant de la parcelle expérimentale (URI ou autre)</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -311,41 +317,48 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
+<td style="text-align: left;">Identifiant de la parcelle<br>
+(field_id)</td>
+<td style="text-align: left;">Identifiant de la parcelle expérimentale (URI ou autre)</td>
+<td style="text-align: left;">http://sinfonia.vignevin.com/id/scientific-object/so-30mo_vauvert</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Nom de la parcelle<br>
 (field_name)</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Nom (ou code) de la parcelle sur laquelle l’expérimentation a lieu</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Syrah prestige</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Description de la parcelle<br>
 (field_notes)</td>
 <td style="text-align: left;">Brève description ou commentaire sur la parcelle expérimentale</td>
 <td style="text-align: left;">Parcelle de syrah d'environ, sur un sol fersiallitique typique des Costières de Nîmes.</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Commune<br>
 (field_commune)</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Nom de la commune sur laquelle se trouve la parcelle</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Vauvert</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Code INSEE commune<br>
 (field_insee_commune)</td>
 <td style="text-align: left;">Code INSEE de la commune (5 caractères alphanumériques)</td>
 <td style="text-align: left;">30341</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Référence cadastrale<br>
 (field_cadas)</td>
 <td style="text-align: left;">Référence cadastrale de la parcelle (convention DGFIP/IGN)</td>
 <td style="text-align: left;">30341000BN0059</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Bassin viticole<br>
 (field_bassin)</td>
 <td style="text-align: left;">Bassin viticole dans lequel se trouve la parcelle [@Coderuraletdelapechemaritime.2017]</td>
@@ -361,39 +374,32 @@ Sud-Ouest<br>
 Val-de-Loire-Centre<br>
 Vallée-du-Rhône-Provence</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Latitude<br>
 (field_latitude)</td>
 <td style="text-align: left;">Latitude du centroïde de la parcelle (degrés décimaux WGS84)</td>
 <td style="text-align: left;">43.6930</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Longitude<br>
 (field_longitude)</td>
 <td style="text-align: left;">Longitude du centroïde de la parcelle (degrés décimaux WGS84)</td>
 <td style="text-align: left;">4.2784</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Géométrie<br>
 (field_geometry)</td>
 <td style="text-align: left;">Géométrie de la parcelle au format WKT dans le référentiel WGS84</td>
 <td style="text-align: left;">POLYGON((4.3040 43.6990,4.3032 43.6990,4.3031 43.6975,4.3044 43.6975,4.3040 43.6990))</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Année de plantation<br>
 (planting_year)</td>
 <td style="text-align: left;">Année de plantation de la parcelle au format AAAA</td>
 <td style="text-align: left;">1998</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Surface (ha)<br>
-(field_area)</td>
-<td style="text-align: left;">Surface en ha de la parcelle expérimentale</td>
-<td style="text-align: left;">0.5</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
@@ -404,41 +410,48 @@ Vallée-du-Rhône-Provence</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Greffon<br>
-(cultivar_name)</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Nom de la variété (et clone si connu) produisant les fruits. Format de type "Syrah N Cl300" ou "Grenache B". Utiliser la liste disposnible sur https://vitioeno.mistea.inrae.fr/resource/app/germplasm</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Syrah N Cl300</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;"></td>
+<td style="text-align: left;">Surface (ha)<br>
+(field_area)</td>
+<td style="text-align: left;">Surface en ha de la parcelle expérimentale</td>
+<td style="text-align: left;">0.5</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Porte-greffe<br>
-(field_rootstock)</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Nom de la variété (et clone si connu) du porte-greffe. Utiliser la liste disposnible sur https://vitioeno.mistea.inrae.fr/resource/app/germplasm</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">110R</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;"></td>
+<td style="text-align: left;">Greffon<br>
+(cultivar_name)</td>
+<td style="text-align: left;">Nom de la variété (et clone si connu) produisant les fruits. Format de type "Syrah N Cl300" ou "Grenache B". Utiliser la liste disposnible sur https://vitioeno.mistea.inrae.fr/resource/app/germplasm</td>
+<td style="text-align: left;">Syrah N Cl300</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">Porte-greffe<br>
+(field_rootstock)</td>
+<td style="text-align: left;">Nom de la variété (et clone si connu) du porte-greffe. Utiliser la liste disposnible sur https://vitioeno.mistea.inrae.fr/resource/app/germplasm</td>
+<td style="text-align: left;">110R</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">Ecartement entre rangs<br>
 (row_spacing)</td>
 <td style="text-align: left;">Ecartement entre les rangs de vigne, en m</td>
 <td style="text-align: left;">2.5</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Ecartement entre ceps<br>
 (plant_spacing)</td>
 <td style="text-align: left;">Ecartement entre les ceps de vigne sur le rang, en m</td>
 <td style="text-align: left;">1.1</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Densité de plantation<br>
-(field_density)</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Densité de plantation (à l'origine), en nombre de plants par hectare</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">3500</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;"></td>
-</tr>
 <tr class="even">
+<td style="text-align: left;">Densité de plantation<br>
+(field_density)</td>
+<td style="text-align: left;">Densité de plantation (à l'origine), en nombre de plants par hectare</td>
+<td style="text-align: left;">3500</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">Mode de taille<br>
 (field_pruning)</td>
 <td style="text-align: left;">Description du mode de taille en place sur la parcelle</td>
@@ -454,7 +467,7 @@ Chablis<br>
 Taille rase de précision (mécanique)<br>
 Taille minimale (non-taille)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Mode de conduite<br>
 (field_training)</td>
 <td style="text-align: left;">Description du mode de conduite de la végétation</td>
@@ -468,7 +481,7 @@ Lyre ouverte<br>
 Pergola<br>
 Tête de saule</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">système d'irrigation<br>
 (field_irrigation_system)</td>
 <td style="text-align: left;">Type de système d'irrigation équipant la parcelle</td>
@@ -479,7 +492,7 @@ goutte-à-goutte enterré<br>
 aspersion<br>
 submersion</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Mode de production<br>
 (field_prod_mode)</td>
 <td style="text-align: left;">Mode de production</td>
@@ -488,7 +501,7 @@ submersion</td>
 Agriculture Biologique<br>
 Biodynamie</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Type de produit<br>
 (field_product_type)</td>
 <td style="text-align: left;">Type de production visée</td>
@@ -499,32 +512,25 @@ Vins sans IG<br>
 Raisin de table<br>
 Eau de vie</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Objectif de rendement<br>
 (field_target_yield)</td>
 <td style="text-align: left;">Objectif de rendement du viticulteur sur la parcelle en t/ha.</td>
 <td style="text-align: left;">3.5</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Altitude<br>
 (field_elevation)</td>
 <td style="text-align: left;">Altitude au-dessus ne niveau de la mer du dispositif expérimental, en m</td>
 <td style="text-align: left;">93</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Orientation des rangs<br>
 (row_direction)</td>
 <td style="text-align: left;">Orientation des rangs en degrés à partir du nord (0 degré), entre 0 et 180.</td>
 <td style="text-align: left;">0</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Identifiant de la parcelle<br>
-(field_id)</td>
-<td style="text-align: left;">Identifiant de la parcelle expérimentale (URI ou autre)</td>
-<td style="text-align: left;">http://sinfonia.vignevin.com/id/scientific-object/so-30mo_vauvert</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
