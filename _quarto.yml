@@ -54,6 +54,7 @@ book:
     - expe_design.qmd
     - vineyard_context.qmd
     - data.qmd
+    - implementation.qmd
     - references.qmd
     - about.qmd
   appendices:

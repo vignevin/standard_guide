@@ -1,0 +1,13 @@
+# Mise en oeuvre
+
+La mise en oeuvre de cette description harmonisée s'appuie pour le moment sur un simple modèle disponible au format xslx.
+
+Ce modèle permet de compléter les différentes rubriques présentées dans ce guide pour contextualiser l'acquisition des données expérimentales.
+
+## Modèle à télécharger
+
+::: callout-important
+Le [modèle Excel](https://github.com/vignevin/vitisdatacrop/blob/main/template.xlsx?raw=true) est disponible en ligne.
+:::
+
+Exemples et tutoriels viendront prochainement compléter cette page !
