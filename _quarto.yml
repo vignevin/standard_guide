@@ -6,6 +6,12 @@ book:
   title: "Guide pour la description d'une expérimentation en vigne"
   original-date: 2023-02-15	
   date: 2023-09-05
+  twitter-card: true
+  favicon: favicon.ico
+  downloads: [pdf]
+  repo-url: https://github.com/vignevin/standard_guide
+  repo-branch: master
+  repo-actions: [issue]
   author: 
   - name: Xavier Delpuech
     corresponding: true
@@ -61,14 +67,24 @@ book:
     - glossary.qmd
     - schema_xp.qmd
     - soilManagementCode.qmd
+  sidebar:
+    background: "#dae0dd"
+    logo: logoCentreRessourcesV2.png
+  page-footer:
+    right: "Projet CASDAR VITIS DATA CROP - 2023"
+    left: "&copy; CC-1.0"
 
 bibliography: references.bib
 
+
+#comments:
+#  hypothesis: true
+  
 format:
   html:
     theme: cosmo
-  # pdf:
-  #   documentclass: scrreprt
+    pdf:
+      documentclass: scrreport
 
 editor: visual
 lang: fr
