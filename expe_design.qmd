@@ -17,7 +17,6 @@ Généralement conduite au sein d'un projet, une *expérimentation* est une acti
 #| warning: false
 #| label: tbl-metadata_expe
 #| tbl-cap: Métadonnées descriptives de l'expérimentation
-#| column: page
 
 knit_table(df=schema,entity_selected="experimentation")
 
@@ -40,7 +39,6 @@ Les niveaux (ou *modalités*) des facteurs étudiés sont décrits indépendamme
 #| warning: false
 #| label: tbl-metadata_factor
 #| tbl-cap: Description des modalités étudiées
-#| column: page
 
 knit_table(df=schema,entity_selected="factor")
 ```
@@ -58,7 +56,6 @@ Attention au terme générique *témoin*, dont la nature peut varier suivant les
 #| warning: false
 #| label: tbl-metadata_trt
 #| tbl-cap: Description des traitements expérimentaux
-#| column: page
 
 knit_table(df=schema,entity_selected="treatment")
 ```
@@ -72,7 +69,6 @@ Le *plan d'expérience* est l'ensemble des règles et procédures par lesquelles
 #| warning: false
 #| label: tbl-metadata_design
 #| tbl-cap: Description du plan d'expérience
-#| column: page
 
 knit_table(df=schema,entity_selected="design")
 ```

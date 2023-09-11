@@ -21,7 +21,6 @@ Afin de rendre vos données interopérables, il est nécessaire d'aligner les va
 #| warning: false
 #| label: tbl-metadata_dic
 #| tbl-cap: Contenu du dictionnaire des données
-#| column: page
 
 knit_table(df=schema,entity_selected="data_dictionnary")
 
@@ -36,10 +35,7 @@ Pour être interprétable, toute mesure doit être contextualisée. Il est dont 
 #| warning: false
 #| label: tbl-metadata_measure
 #| tbl-cap: Variables de contexte
-#| column: page
 
 knit_table(df=schema,entity_selected="measure")
 
 ```
-
-

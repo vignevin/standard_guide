@@ -8,12 +8,12 @@ source("utils.R")
 
 # Glossaire
 
-Le tableau ci-dessous propose la définitions de quelques termes utilisés pour la conduite des expérimentations au vignoble. 
+Le tableau ci-dessous propose la définitions de quelques termes utilisés pour la conduite des expérimentations au vignoble.
 
 ```{r}
 #| echo: false
 #| warning: false
-#| column: page
+
 termes<-c("parcelle","dispositif expérimental","parcelle unitaire","traitement expérimental","boc","protocole",
           "unité d'observation","placette",
           "modalité","facteur", "témoin",

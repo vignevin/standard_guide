@@ -79,12 +79,16 @@ bibliography: references.bib
 
 #comments:
 #  hypothesis: true
-  
+prefer-html: true
+
 format:
   html:
     theme: cosmo
     pdf:
-      documentclass: scrreport
+      toc: true
+      number-sections: true
+      colorlinks: true
+      documentclass: book
 
 editor: visual
 lang: fr

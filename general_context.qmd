@@ -19,7 +19,6 @@ Connaître le projet permet d'avoir une vision d'ensemble des activités conduit
 #| warning: false
 #| label: tbl-metadata_project
 #| tbl-cap: Métadonnées descriptives du projet
-#| column: page
 
 knit_table(df=schema,entity_selected="project")
 
@@ -34,7 +33,6 @@ Il s'agit ici d'identifier les personnes impliquées dans la conduite de l'expé
 #| warning: false
 #| label: tbl-metadata_person
 #| tbl-cap: Métadonnées descriptives des personnes
-#| column: page
 
 knit_table(df=schema,entity_selected="person")
 
@@ -50,12 +48,13 @@ Attention, certaines données (noms, géolocalisation précise des parcelles) pe
 
 Les annotations sont des commentaires libres, qui permettent d'apporter des informations complémentaires synthétiques permettant de faciliter la compréhension et l'interprétation des données.
 
+page-right
+
 ```{r}
 #| echo: false
 #| warning: false
 #| label: tbl-metadata_annotations
 #| tbl-cap: Métadonnées descriptives des annotations
-#| column: page
 
 knit_table(df=schema,entity_selected="annotation")
 

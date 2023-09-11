@@ -10,15 +10,13 @@ source("utils.R")
 
 ## L'exploitation agricole
 
-Une *exploitation* est la structure ou l'entité juridique dont l'objectif est d'organiser la production sur la parcelle. Elle est caractérisée par une gestion unique et des moyens de production propres. 
-Les métadonnées d'une exploitation agricole sont proposées dans le @tbl-metadata_estate ci-dessous.
+Une *exploitation* est la structure ou l'entité juridique dont l'objectif est d'organiser la production sur la parcelle. Elle est caractérisée par une gestion unique et des moyens de production propres. Les métadonnées d'une exploitation agricole sont proposées dans le @tbl-metadata_estate ci-dessous.
 
 ```{r}
 #| echo: false
 #| warning: false
 #| label: tbl-metadata_estate
 #| tbl-cap: Métadonnées descriptives de l'exploitation
-#| column: page
 
 knit_table(df=schema,entity_selected="estate",caption="Métadonnées descriptives de l'exploitation")
 ```
@@ -32,7 +30,6 @@ Une *parcelle* ayant le même cépage, le même itinéraire technique (conduite 
 #| warning: false
 #| label: tbl-metadata_plot
 #| tbl-cap: Métadonnées descriptives de la parcelle expérimentale
-#| column: page
 
 knit_table(df=schema,entity_selected="field",caption="Métadonnées descriptives de la parcelle expérimentale")
 ```
@@ -46,14 +43,13 @@ Le *sol* est le substrat sur lequel se développent les plantes. Avoir quelques 
 #| warning: false
 #| label: tbl-metadata_soil
 #| tbl-cap: Métadonnées descriptives du sol de la parcelle
-#| column: page
+
 knit_table(df=schema,entity_selected="soil")
 ```
 
 ## L'itinéraire technique
 
-L'*itinéraire technique* est “la combinaison logique et ordonnée des techniques mises en œuvre sur une parcelle en vue d'obtenir une production” (Sebillotte, 1974, 1978).
-Tout comme le sol, la connaissance de l'itinéraire technique est utile pour mieux comprendre les résultats. Les métadonnées liées à l'itinéraire technique sont proposées dans le @tbl-metadata_itk ci-dessous. L'itinéraire technique pouvant toutefois évoluer au cours d'un essai suivi sur plusieurs années, il est possible de lui donner un millésime de début et un de fin.
+L'*itinéraire technique* est "la combinaison logique et ordonnée des techniques mises en œuvre sur une parcelle en vue d'obtenir une production" (Sebillotte, 1974, 1978). Tout comme le sol, la connaissance de l'itinéraire technique est utile pour mieux comprendre les résultats. Les métadonnées liées à l'itinéraire technique sont proposées dans le @tbl-metadata_itk ci-dessous. L'itinéraire technique pouvant toutefois évoluer au cours d'un essai suivi sur plusieurs années, il est possible de lui donner un millésime de début et un de fin.
 
 Les données complètes de traçabilité de l'itinéraire technique (dates des interventions, matériel, produits utilisées...) peuvent être fournies en fichier(s) complémentaire(s), de préférence en utilisant les standards existants comme celui proposé par AgroEDI (format [DAPLOS](https://agroedieurope.fr/workgroup/tracabilite-des-productions-vegetales/fiche-parcellaire-grandes-cultures-message-edifact-daplos/) ou [e-DAPLOS](https://agroedieurope.fr/workgroup/tracabilite-des-productions-vegetales/fiche-parcellaire-edaplos/)). Cela peut aussi être plus simplement une exportation pdf issu d'un logiciel de traçabilité comme MesParcelles.
 
@@ -62,6 +58,6 @@ Les données complètes de traçabilité de l'itinéraire technique (dates des i
 #| warning: false
 #| label: tbl-metadata_itk
 #| tbl-cap: Métadonnées descriptives de l'itinéraire technique sur la parcelle
-#| column: page
+
 knit_table(df=schema,entity_selected="itk")
 ```
