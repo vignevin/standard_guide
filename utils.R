@@ -2,8 +2,19 @@
 
 ### load data
 library(readxl)
-schema <- readxl::read_xlsx("../vitisdatacrop/experimental_context_description.xlsx")
-thesaurus <- readxl::read_xlsx("../vitisdatacrop/grapevine_experimental_thesaurus.xlsx")
+
+loadXLSX_url <- function(url) {
+  temp_file <- tempfile(fileext = ".xlsx")
+  download.file(url = url, destfile = temp_file, mode = "wb", quiet = TRUE)
+  readxl::read_xlsx(temp_file)
+}
+
+
+schema_url<-"https://github.com/vignevin/vitisdatacrop/blob/main/experimental_context_description.xlsx?raw=true"
+thesaurus_url<-"https://github.com/vignevin/vitisdatacrop/blob/main/grapevine_experimental_thesaurus.xlsx?raw=true"
+
+schema <- loadXLSX_url(schema_url)
+thesaurus <- loadXLSX_url(thesaurus_url)
 
 ### load library
 library(dplyr)

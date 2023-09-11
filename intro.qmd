@@ -29,6 +29,6 @@ L'objectif n'est pas d'être exhaustif sur les métadonnées existantes dans ces
 
 La version actuelle de ce guide s'attache à proposer une description du contexte d'acquisition des données expérimentales, sans aller jusqu'au données mesurées sur le terrain par les expérimentateurs. En ce sens, nous n'avons pas inclus de proposition de champs descriptifs des objets mesurées (parcelles unitaires, ceps, organes, sol ...). Les entités identifiées et décrites dans la suite de ce guide sont reprises sur @fig-entities
 
-![Relations entre les entités du standard](Schema%20entit%C3%A9%20standard%20data.png){#fig-entities}
+![Relations entre les entités du standard](SchemaStandard.png){#fig-entities}
 
 Ce travail devra être complété dans un second temps pour permettre d'associer les données à cette description du contexte. On peut à ce titre déjà souligner l'importance d'associer un dictionnaire de données explicitant les variables mesurées. Ces variables doivent être à chaque fois que c'est possible reliées à la Vitis Ontology[@duchene:hal-02947459].
