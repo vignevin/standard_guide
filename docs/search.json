@@ -39,7 +39,7 @@
     "href": "general_context.html#les-annotations",
     "title": "2  Le contexte général",
     "section": "2.3 Les annotations",
-    "text": "2.3 Les annotations\nLes annotations sont des commentaires libres, qui permettent d’apporter des informations complémentaires synthétiques permettant de faciliter la compréhension et l’interprétation des données.\n\n\n\n\nTable 2.3: Métadonnées descriptives des annotations\n\n\n\n\n\n\n\n\nLabel (nom)\nDescription\nExemple\nListe\n\n\n\n\nType\n(annot_type)\nType d'annotation\névénement\nRemarque\nRésultat\nEvénement\n\n\nDate\n(annot_date)\nDate de l'annotation\n2008-06-21\n\n\n\nDescription\n(annot_desc)\nDescription de l'annotation\nForte attaque de mildiou en 2008, avec 30% de pertes de récolte"
+    "text": "2.3 Les annotations\nLes annotations sont des commentaires libres, qui permettent d’apporter des informations complémentaires synthétiques permettant de faciliter la compréhension et l’interprétation des données.\npage-right\n\n\n\n\nTable 2.3: Métadonnées descriptives des annotations\n\n\n\n\n\n\n\n\nLabel (nom)\nDescription\nExemple\nListe\n\n\n\n\nType\n(annot_type)\nType d'annotation\névénement\nRemarque\nRésultat\nEvénement\n\n\nDate\n(annot_date)\nDate de l'annotation\n2008-06-21\n\n\n\nDescription\n(annot_desc)\nDescription de l'annotation\nForte attaque de mildiou en 2008, avec 30% de pertes de récolte"
   },
   {
     "objectID": "expe_design.html#lexpérimentation",

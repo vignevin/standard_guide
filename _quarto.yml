@@ -84,11 +84,11 @@ prefer-html: true
 format:
   html:
     theme: cosmo
-    pdf:
-      toc: true
-      number-sections: true
-      colorlinks: true
-      documentclass: book
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+    documentclass: book
 
 editor: visual
 lang: fr
