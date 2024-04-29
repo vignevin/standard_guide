@@ -10,9 +10,11 @@ source("utils.R")
 
 ## Le projet
 
-Un projet (sous entendu "de recherche") est le cadre général dans lequel s'inscrivent des activités de recherche, dont en particulier une ou plusieurs expérimentations. Il fait généralement l'objet d'un contrat ou d'un accord de subvention avec les organismes de financement apportant un soutien financier.
+Un projet (sous entendu "de recherche") est le cadre général dans lequel s'inscrivent des activités de recherche, dont en particulier une ou plusieurs expérimentations. Il fait généralement l'objet d'une ou plusieurs conventions avec les organismes de financement apportant un soutien financier.
 
-Connaître le projet permet d'avoir une vision d'ensemble des activités conduites et de rechercher des documents ou compléments d'informations sur le contexte de l'étude. La connaissance du support financier peut aussi être importante pour définir le statut des données et leur vocation ou non à être ouvertes (qui peut être précisé dans le plan de gestion de données du projet). Les métadonnées descriptives du projet sont proposées dans @tbl-metadata_project.
+Connaître le projet permet d'avoir une vision d'ensemble des activités conduites et de rechercher des documents ou compléments d'informations sur le contexte de l'étude. La connaissance des supports financiers peut aussi être importante pour définir le statut des données et leur vocation ou non à être ouvertes (qui peut être précisé dans le plan de gestion de données du projet).
+
+Les métadonnées descriptives du projet sont proposées dans @tbl-metadata_project.
 
 ```{r}
 #| echo: false
@@ -47,8 +49,6 @@ Attention, certaines données (noms, géolocalisation précise des parcelles) pe
 ## Les annotations
 
 Les annotations sont des commentaires libres, qui permettent d'apporter des informations complémentaires synthétiques permettant de faciliter la compréhension et l'interprétation des données.
-
-page-right
 
 ```{r}
 #| echo: false

@@ -22,7 +22,7 @@ Afin de rendre vos données interopérables, il est nécessaire d'aligner les va
 #| label: tbl-metadata_dic
 #| tbl-cap: Contenu du dictionnaire des données
 
-knit_table(df=schema,entity_selected="data_dictionnary")
+knit_table(df=schema,entity_selected="data_dictionary")
 
 ```
 

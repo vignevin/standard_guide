@@ -10,7 +10,7 @@ source("utils.R")
 
 ## L'expérimentation
 
-Généralement conduite au sein d'un projet, une *expérimentation* est une activité planifiée consistant à observer un ensemble d'objets suivant un protocole préétabli pour tester une hypothèse, répondre à une question ou découvrir de nouveaux faits. Tout comme le projet, elle peut être décrite par quelques métadonnées décrites dans le @tbl-metadata_expe ci-
+Généralement conduite au sein d'un projet, une *expérimentation* est une activité planifiée consistant à observer un ensemble d'objets suivant un protocole préétabli pour tester une hypothèse, répondre à une question ou découvrir de nouveaux faits. Tout comme le projet, elle peut être décrite par quelques métadonnées décrites dans le tableau @tbl-metadata_expe.
 
 ```{r}
 #| echo: false
@@ -40,7 +40,7 @@ Les niveaux (ou *modalités*) des facteurs étudiés sont décrits indépendamme
 #| label: tbl-metadata_factor
 #| tbl-cap: Description des modalités étudiées
 
-knit_table(df=schema,entity_selected="factor")
+knit_table(df=schema,entity_selected="moda")
 ```
 
 ### Les traitements expérimentaux

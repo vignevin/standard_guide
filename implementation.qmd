@@ -10,4 +10,8 @@ Ce modèle permet de compléter les différentes rubriques présentées dans ce 
 Le [modèle Excel](https://github.com/vignevin/vitisdatacrop/blob/main/template.xlsx?raw=true) est disponible en ligne.
 :::
 
+## Package R
+
+Un package R {vitisdatacropR} est disponible [en ligne](https://github.com/vignevin/vitisdatacropR).
+
 Exemples et tutoriels viendront prochainement compléter cette page !
