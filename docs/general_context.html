@@ -234,8 +234,9 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="le-projet" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="le-projet"><span class="header-section-number">2.1</span> Le projet</h2>
-<p>Un projet (sous entendu “de recherche”) est le cadre général dans lequel s’inscrivent des activités de recherche, dont en particulier une ou plusieurs expérimentations. Il fait généralement l’objet d’un contrat ou d’un accord de subvention avec les organismes de financement apportant un soutien financier.</p>
-<p>Connaître le projet permet d’avoir une vision d’ensemble des activités conduites et de rechercher des documents ou compléments d’informations sur le contexte de l’étude. La connaissance du support financier peut aussi être importante pour définir le statut des données et leur vocation ou non à être ouvertes (qui peut être précisé dans le plan de gestion de données du projet). Les métadonnées descriptives du projet sont proposées dans <a href="#tbl-metadata_project">Table&nbsp;<span>2.1</span></a>.</p>
+<p>Un projet (sous entendu “de recherche”) est le cadre général dans lequel s’inscrivent des activités de recherche, dont en particulier une ou plusieurs expérimentations. Il fait généralement l’objet d’une ou plusieurs conventions avec les organismes de financement apportant un soutien financier.</p>
+<p>Connaître le projet permet d’avoir une vision d’ensemble des activités conduites et de rechercher des documents ou compléments d’informations sur le contexte de l’étude. La connaissance des supports financiers peut aussi être importante pour définir le statut des données et leur vocation ou non à être ouvertes (qui peut être précisé dans le plan de gestion de données du projet).</p>
+<p>Les métadonnées descriptives du projet sont proposées dans <a href="#tbl-metadata_project">Table&nbsp;<span>2.1</span></a>.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="tbl-metadata_project" class="anchored">
@@ -255,16 +256,16 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">URI projet<br>
+<td style="text-align: left;">Identifiant projet<br>
 (proj_uri)</td>
-<td style="text-align: left;">URI du projet</td>
+<td style="text-align: left;">Identifiant du projet (URI ou autre)</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Titre du projet<br>
+<td style="text-align: left;">Titre du projet<br>
 (proj_title)</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Titre du projet</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Elaboration d’un outil d’aide à la décision pour la gestion du patrimoine organique des sols viticoles. Paramétrage et validation du modèle AMG</td>
+<td style="text-align: left;">Titre du projet</td>
+<td style="text-align: left;">Elaboration d’un outil d’aide à la décision pour la gestion du patrimoine organique des sols viticoles. Paramétrage et validation du modèle AMG</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Acronyme<br>
@@ -273,10 +274,10 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">OAD MO</td>
 </tr>
 <tr class="even">
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Date début<br>
+<td style="text-align: left;">Date début<br>
 (proj_start_date)</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Date de début du projet. Elle est exprimée au format AAAA-MM-JJ suivant la norme internationale ISO 8601.</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">2016-07-01</td>
+<td style="text-align: left;">Date de début du projet. Elle est exprimée au format AAAA-MM-JJ suivant la norme internationale ISO 8601.</td>
+<td style="text-align: left;">2016-07-01</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Date fin<br>
@@ -291,16 +292,22 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">L'objectif de cette action est d'améliorer le conseil en termes de gestion de la matière organique, par une meilleure connaissance du type de produit à apporter en liaison avec les besoins au niveau du sol et les effets attendus, tout en prenant en compte les conditions pédo-climatiques et les condi [...]</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Description<br>
+<td style="text-align: left;">Description<br>
 (proj_desc)</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Description du projet</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Un réseau de 6 parcelles a été mis en place à l'échelle nationale. Sur ce réseau, il s’agit d’acquérir les données concernant le sol, la plante et les produits épandus (variables selon les sites). Les parcelles d’expérimentation ont été mises en place l’hiver 2008-2009 pour certaines et l’hiver 200 [...]</td>
+<td style="text-align: left;">Description du projet</td>
+<td style="text-align: left;">Un réseau de 6 parcelles a été mis en place à l'échelle nationale. Sur ce réseau, il s’agit d’acquérir les données concernant le sol, la plante et les produits épandus (variables selon les sites). Les parcelles d’expérimentation ont été mises en place l’hiver 2008-2009 pour certaines et l’hiver 200 [...]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Support financier<br>
+<td style="text-align: left;">Financeurs<br>
 (ex_funding_source)</td>
-<td style="text-align: left;">Support financier du projet</td>
-<td style="text-align: left;">&nbsp;FranceAgriMer</td>
+<td style="text-align: left;">Financeur(s) du projet. Séparer par ";"</td>
+<td style="text-align: left;">FranceAgriMer;CNIV</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Identifiant convention<br>
+(proj_conv)</td>
+<td style="text-align: left;">Identifiant de la ou des conventions administratives liées au projet. Séparer par ";"</td>
+<td style="text-align: left;">GARP:2069;GARP:2051</td>
 </tr>
 </tbody>
 </table>
@@ -382,7 +389,6 @@ Données à caractère personnel
 <section id="les-annotations" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="les-annotations"><span class="header-section-number">2.3</span> Les annotations</h2>
 <p>Les annotations sont des commentaires libres, qui permettent d’apporter des informations complémentaires synthétiques permettant de faciliter la compréhension et l’interprétation des données.</p>
-<p>page-right</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="tbl-metadata_annotations" class="anchored">

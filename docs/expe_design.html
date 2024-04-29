@@ -238,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="lexpérimentation" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="lexpérimentation"><span class="header-section-number">3.1</span> L’expérimentation</h2>
-<p>Généralement conduite au sein d’un projet, une <em>expérimentation</em> est une activité planifiée consistant à observer un ensemble d’objets suivant un protocole préétabli pour tester une hypothèse, répondre à une question ou découvrir de nouveaux faits. Tout comme le projet, elle peut être décrite par quelques métadonnées décrites dans le <a href="#tbl-metadata_expe">Table&nbsp;<span>3.1</span></a> ci-</p>
+<p>Généralement conduite au sein d’un projet, une <em>expérimentation</em> est une activité planifiée consistant à observer un ensemble d’objets suivant un protocole préétabli pour tester une hypothèse, répondre à une question ou découvrir de nouveaux faits. Tout comme le projet, elle peut être décrite par quelques métadonnées décrites dans le tableau <a href="#tbl-metadata_expe">Table&nbsp;<span>3.1</span></a>.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="tbl-metadata_expe" class="anchored">
@@ -258,9 +258,9 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">URI expérimentation<br>
+<td style="text-align: left;">Identifiant expérimentation<br>
 (experiment_ID)</td>
-<td style="text-align: left;">URI de l'expérimentation</td>
+<td style="text-align: left;">Identifiant de l'expérimentation (URI ou autre)</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
@@ -294,12 +294,6 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">Sur la parcelle gérée par l’IFV en Languedoc-Roussillon, les modalités mises en place sont les suivantes : - Témoin sans apports (TEM) - Apport compost déchets verts (DV) - Apport compost de marc (MARC) Les modalités ont été mises en place le 17 mars et le 23 mars 2009, avec un dispositif expéri [...]</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Projet<br>
-(expe_proj)</td>
-<td style="text-align: left;">Acronyme du projet ou des projets associés à l'expérimentation</td>
-<td style="text-align: left;">OAD MO</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">Organisation<br>
 (institute_name)</td>
 <td style="text-align: left;">Nom de l'institution responsable de l'expérimentation</td>
@@ -344,7 +338,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Modalité<br>
 (factor_value)</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Nom ou code de la modalité (niveau du facteur)</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Code de la modalité (niveau du facteur)</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">DV</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;"></td>
 </tr>
@@ -356,9 +350,9 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; font-weight: bold; background-color: white !important;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Catégorie de facteur<br>
+<td style="text-align: left;">Facteur<br>
 (main_experiment_factor)</td>
-<td style="text-align: left;">Type du facteur</td>
+<td style="text-align: left;">Facteur de la modalité</td>
 <td style="text-align: left;">fertilisant</td>
 <td style="text-align: left;">matériel végétal<br>
 protection phytosanitaire<br>
@@ -367,6 +361,13 @@ mode de conduite<br>
 système<br>
 fertilisant<br>
 irrigation</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Identifiant modalité<br>
+(factor_uri)</td>
+<td style="text-align: left;">Identifiant (généralement de type URI) de la modalité</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -411,24 +412,30 @@ Avertissement
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Traitement<br>
-(treatment_name)</td>
-<td style="text-align: left;">Nom ou code du traitement expérimental</td>
-<td style="text-align: left;">N-IR</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Nom de la parcelle<br>
+(field_name)</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Nom (ou code) de la parcelle sur laquelle l’expérimentation a lieu</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">Syrah prestige</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Combinaison de niveaux de facteurs<br>
-(experimental_factor_comb)</td>
-<td style="text-align: left;">Combinaison des niveaux de facteurs appliqués (séparés par ";").</td>
-<td style="text-align: left;">N;IR</td>
+<td style="text-align: left;">Traitement expérimental<br>
+(treatment_name)</td>
+<td style="text-align: left;">Code du traitement expérimental</td>
+<td style="text-align: left;">N-IR</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">Combinaison de modalités<br>
+(experimental_factor_comb)</td>
+<td style="text-align: left;">Combinaison de modalités (ou niveaux de facteurs). Utiliser le séparateur ";" sans espace.</td>
+<td style="text-align: left;">N;IR</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">Nombre de répétition<br>
 (number_of_replicates)</td>
 <td style="text-align: left;">Nombre de répétitions pour le traitement expérimental</td>
 <td style="text-align: left;">3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Commentaires<br>
 (tr_notes)</td>
 <td style="text-align: left;">Commentaires sur le traitement expérimental</td>
@@ -478,10 +485,12 @@ Avertissement
 (design_plan)</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Type de plan d'expérience selon la crop ontology CO_715</td>
 <td style="text-align: left; font-weight: bold; background-color: white !important;">Carré latin</td>
-<td style="text-align: left; font-weight: bold; background-color: white !important;">Randomisé<br>
-Carré latin<br>
-Bloc randomisé<br>
-Blocs incomplets</td>
+<td style="text-align: left; font-weight: bold; background-color: white !important;">randomisé<br>
+carré latin<br>
+bloc randomisé<br>
+blocs incomplets<br>
+en bandes<br>
+variable</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Taille des unités expérimentales<br>
